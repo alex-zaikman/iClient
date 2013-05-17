@@ -1,0 +1,387 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012B52611742459E007AADBD /* libLmsRestConector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 017C5BBF1740F3F300245713 /* libLmsRestConector.a */; };
+		012B526B1744ECF6007AADBD /* ClassesViewModel.h in Resources */ = {isa = PBXBuildFile; fileRef = 012B526A1744ECF6007AADBD /* ClassesViewModel.h */; };
+		012B52721744F1EA007AADBD /* ClassesViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B52711744F1EA007AADBD /* ClassesViewModel.m */; };
+		01C3BE341740F44900C75915 /* LmsConnectionLogIn.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE331740F44900C75915 /* LmsConnectionLogIn.h */; };
+		01C3BE371740F52E00C75915 /* MenuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C3BE361740F52E00C75915 /* MenuViewController.m */; };
+		01C3BE391740F5C900C75915 /* CalableLmsClient.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE381740F5C900C75915 /* CalableLmsClient.h */; };
+		01C3BE3C1740FE0C00C75915 /* PresentorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C3BE3B1740FE0C00C75915 /* PresentorViewController.m */; };
+		01C3BE41174107FC00C75915 /* LmsConnectionRestApi.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE40174107FC00C75915 /* LmsConnectionRestApi.h */; };
+		01FDBB091740B5BF0078727B /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FDBB081740B5BF0078727B /* UIKit.framework */; };
+		01FDBB0B1740B5BF0078727B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FDBB0A1740B5BF0078727B /* Foundation.framework */; };
+		01FDBB0D1740B5BF0078727B /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FDBB0C1740B5BF0078727B /* CoreGraphics.framework */; };
+		01FDBB131740B5BF0078727B /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB111740B5BF0078727B /* InfoPlist.strings */; };
+		01FDBB151740B5BF0078727B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FDBB141740B5BF0078727B /* main.m */; };
+		01FDBB191740B5BF0078727B /* LmsClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FDBB181740B5BF0078727B /* LmsClientAppDelegate.m */; };
+		01FDBB1B1740B5BF0078727B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB1A1740B5BF0078727B /* Default.png */; };
+		01FDBB1D1740B5BF0078727B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB1C1740B5BF0078727B /* Default@2x.png */; };
+		01FDBB1F1740B5BF0078727B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB1E1740B5BF0078727B /* Default-568h@2x.png */; };
+		01FDBB221740B5BF0078727B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB201740B5BF0078727B /* MainStoryboard.storyboard */; };
+		01FDBB251740B5BF0078727B /* LmsClientViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FDBB241740B5BF0078727B /* LmsClientViewController.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		017C5BBE1740F3F300245713 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 017C5BBA1740F3F200245713 /* LmsRestConector.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = 017C5BA91740F3F200245713;
+			remoteInfo = LmsRestConector;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		012B526A1744ECF6007AADBD /* ClassesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = ClassesViewModel.h; path = ../LmsRestConector/LmsRestConector/ClassesViewModel.h; sourceTree = "<group>"; };
+		012B526F1744F1D8007AADBD /* RestCallableClient.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RestCallableClient.h; sourceTree = "<group>"; };
+		012B52701744F1EA007AADBD /* ClassesViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ClassesViewModel.h; sourceTree = "<group>"; };
+		012B52711744F1EA007AADBD /* ClassesViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ClassesViewModel.m; sourceTree = "<group>"; };
+		017C5BBA1740F3F200245713 /* LmsRestConector.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = LmsRestConector.xcodeproj; path = LmsRestConector/LmsRestConector.xcodeproj; sourceTree = "<group>"; };
+		01C3BE331740F44900C75915 /* LmsConnectionLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LmsConnectionLogIn.h; path = ../LmsRestConector/LmsRestConector/LmsConnectionLogIn.h; sourceTree = "<group>"; };
+		01C3BE351740F52E00C75915 /* MenuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MenuViewController.h; sourceTree = "<group>"; };
+		01C3BE361740F52E00C75915 /* MenuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MenuViewController.m; sourceTree = "<group>"; };
+		01C3BE381740F5C900C75915 /* CalableLmsClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CalableLmsClient.h; path = ../LmsRestConector/LmsRestConector/CalableLmsClient.h; sourceTree = "<group>"; };
+		01C3BE3A1740FE0C00C75915 /* PresentorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PresentorViewController.h; sourceTree = "<group>"; };
+		01C3BE3B1740FE0C00C75915 /* PresentorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PresentorViewController.m; sourceTree = "<group>"; };
+		01C3BE40174107FC00C75915 /* LmsConnectionRestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LmsConnectionRestApi.h; path = ../LmsRestConector/LmsRestConector/LmsConnectionRestApi.h; sourceTree = "<group>"; };
+		01FDBB051740B5BF0078727B /* LmsClient.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LmsClient.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		01FDBB081740B5BF0078727B /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		01FDBB0A1740B5BF0078727B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01FDBB0C1740B5BF0078727B /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		01FDBB101740B5BF0078727B /* LmsClient-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "LmsClient-Info.plist"; sourceTree = "<group>"; };
+		01FDBB121740B5BF0078727B /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		01FDBB141740B5BF0078727B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		01FDBB161740B5BF0078727B /* LmsClient-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LmsClient-Prefix.pch"; sourceTree = "<group>"; };
+		01FDBB171740B5BF0078727B /* LmsClientAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LmsClientAppDelegate.h; path = LmsClient/LmsClientAppDelegate.h; sourceTree = "<group>"; };
+		01FDBB181740B5BF0078727B /* LmsClientAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LmsClientAppDelegate.m; path = LmsClient/LmsClientAppDelegate.m; sourceTree = "<group>"; };
+		01FDBB1A1740B5BF0078727B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		01FDBB1C1740B5BF0078727B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		01FDBB1E1740B5BF0078727B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		01FDBB211740B5BF0078727B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		01FDBB231740B5BF0078727B /* LmsClientViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = LmsClientViewController.h; path = LmsClient/LmsClientViewController.h; sourceTree = "<group>"; };
+		01FDBB241740B5BF0078727B /* LmsClientViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; name = LmsClientViewController.m; path = LmsClient/LmsClientViewController.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01FDBB021740B5BF0078727B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				012B52611742459E007AADBD /* libLmsRestConector.a in Frameworks */,
+				01FDBB091740B5BF0078727B /* UIKit.framework in Frameworks */,
+				01FDBB0B1740B5BF0078727B /* Foundation.framework in Frameworks */,
+				01FDBB0D1740B5BF0078727B /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		017C5BBB1740F3F200245713 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				017C5BBF1740F3F300245713 /* libLmsRestConector.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01FDBAFC1740B5BF0078727B = {
+			isa = PBXGroup;
+			children = (
+				01C3BE351740F52E00C75915 /* MenuViewController.h */,
+				01C3BE361740F52E00C75915 /* MenuViewController.m */,
+				01FDBB171740B5BF0078727B /* LmsClientAppDelegate.h */,
+				01FDBB181740B5BF0078727B /* LmsClientAppDelegate.m */,
+				01C3BE3A1740FE0C00C75915 /* PresentorViewController.h */,
+				01C3BE3B1740FE0C00C75915 /* PresentorViewController.m */,
+				01FDBB201740B5BF0078727B /* MainStoryboard.storyboard */,
+				01FDBB231740B5BF0078727B /* LmsClientViewController.h */,
+				01FDBB241740B5BF0078727B /* LmsClientViewController.m */,
+				01FDBB0F1740B5BF0078727B /* Supporting Files */,
+				01FDBB071740B5BF0078727B /* Frameworks */,
+				01FDBB061740B5BF0078727B /* Products */,
+				017C5BBA1740F3F200245713 /* LmsRestConector.xcodeproj */,
+			);
+			sourceTree = "<group>";
+		};
+		01FDBB061740B5BF0078727B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01FDBB051740B5BF0078727B /* LmsClient.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01FDBB071740B5BF0078727B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01FDBB081740B5BF0078727B /* UIKit.framework */,
+				01FDBB0A1740B5BF0078727B /* Foundation.framework */,
+				01FDBB0C1740B5BF0078727B /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01FDBB0F1740B5BF0078727B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				012B52701744F1EA007AADBD /* ClassesViewModel.h */,
+				012B52711744F1EA007AADBD /* ClassesViewModel.m */,
+				012B526F1744F1D8007AADBD /* RestCallableClient.h */,
+				012B526A1744ECF6007AADBD /* ClassesViewModel.h */,
+				01C3BE40174107FC00C75915 /* LmsConnectionRestApi.h */,
+				01C3BE381740F5C900C75915 /* CalableLmsClient.h */,
+				01C3BE331740F44900C75915 /* LmsConnectionLogIn.h */,
+				01FDBB101740B5BF0078727B /* LmsClient-Info.plist */,
+				01FDBB111740B5BF0078727B /* InfoPlist.strings */,
+				01FDBB141740B5BF0078727B /* main.m */,
+				01FDBB161740B5BF0078727B /* LmsClient-Prefix.pch */,
+				01FDBB1A1740B5BF0078727B /* Default.png */,
+				01FDBB1C1740B5BF0078727B /* Default@2x.png */,
+				01FDBB1E1740B5BF0078727B /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			path = LmsClient;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01FDBB041740B5BF0078727B /* LmsClient */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01FDBB281740B5BF0078727B /* Build configuration list for PBXNativeTarget "LmsClient" */;
+			buildPhases = (
+				01FDBB011740B5BF0078727B /* Sources */,
+				01FDBB021740B5BF0078727B /* Frameworks */,
+				01FDBB031740B5BF0078727B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LmsClient;
+			productName = LmsClient;
+			productReference = 01FDBB051740B5BF0078727B /* LmsClient.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01FDBAFD1740B5BF0078727B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = LmsClient;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "alex zaikman";
+			};
+			buildConfigurationList = 01FDBB001740B5BF0078727B /* Build configuration list for PBXProject "LmsClient" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01FDBAFC1740B5BF0078727B;
+			productRefGroup = 01FDBB061740B5BF0078727B /* Products */;
+			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 017C5BBB1740F3F200245713 /* Products */;
+					ProjectRef = 017C5BBA1740F3F200245713 /* LmsRestConector.xcodeproj */;
+				},
+			);
+			projectRoot = "";
+			targets = (
+				01FDBB041740B5BF0078727B /* LmsClient */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		017C5BBF1740F3F300245713 /* libLmsRestConector.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libLmsRestConector.a;
+			remoteRef = 017C5BBE1740F3F300245713 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
+/* Begin PBXResourcesBuildPhase section */
+		01FDBB031740B5BF0078727B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FDBB131740B5BF0078727B /* InfoPlist.strings in Resources */,
+				01FDBB1B1740B5BF0078727B /* Default.png in Resources */,
+				01FDBB1D1740B5BF0078727B /* Default@2x.png in Resources */,
+				01FDBB1F1740B5BF0078727B /* Default-568h@2x.png in Resources */,
+				01FDBB221740B5BF0078727B /* MainStoryboard.storyboard in Resources */,
+				01C3BE341740F44900C75915 /* LmsConnectionLogIn.h in Resources */,
+				01C3BE391740F5C900C75915 /* CalableLmsClient.h in Resources */,
+				01C3BE41174107FC00C75915 /* LmsConnectionRestApi.h in Resources */,
+				012B526B1744ECF6007AADBD /* ClassesViewModel.h in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01FDBB011740B5BF0078727B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FDBB151740B5BF0078727B /* main.m in Sources */,
+				01FDBB191740B5BF0078727B /* LmsClientAppDelegate.m in Sources */,
+				01FDBB251740B5BF0078727B /* LmsClientViewController.m in Sources */,
+				01C3BE371740F52E00C75915 /* MenuViewController.m in Sources */,
+				01C3BE3C1740FE0C00C75915 /* PresentorViewController.m in Sources */,
+				012B52721744F1EA007AADBD /* ClassesViewModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		01FDBB111740B5BF0078727B /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01FDBB121740B5BF0078727B /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		01FDBB201740B5BF0078727B /* MainStoryboard.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				01FDBB211740B5BF0078727B /* en */,
+			);
+			name = MainStoryboard.storyboard;
+			path = LmsClient;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		01FDBB261740B5BF0078727B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+			};
+			name = Debug;
+		};
+		01FDBB271740B5BF0078727B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 2;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01FDBB291740B5BF0078727B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LmsClient/LmsClient-Prefix.pch";
+				INFOPLIST_FILE = "LmsClient/LmsClient-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LmsRestConector-endqazzsgrqquqgetploipxtrafi/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/LmsRestConector-bfbekqgcaadideakznqktlwjqtmt/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		01FDBB2A1740B5BF0078727B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LmsClient/LmsClient-Prefix.pch";
+				INFOPLIST_FILE = "LmsClient/LmsClient-Info.plist";
+				LIBRARY_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LmsRestConector-endqazzsgrqquqgetploipxtrafi/Build/Products/Debug-iphoneos\"",
+					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/LmsRestConector-bfbekqgcaadideakznqktlwjqtmt/Build/Products/Debug-iphoneos\"",
+				);
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01FDBB001740B5BF0078727B /* Build configuration list for PBXProject "LmsClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01FDBB261740B5BF0078727B /* Debug */,
+				01FDBB271740B5BF0078727B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01FDBB281740B5BF0078727B /* Build configuration list for PBXNativeTarget "LmsClient" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01FDBB291740B5BF0078727B /* Debug */,
+				01FDBB2A1740B5BF0078727B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01FDBAFD1740B5BF0078727B /* Project object */;
+}

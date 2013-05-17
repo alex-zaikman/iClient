@@ -1,0 +1,270 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		012B52641744BB8B007AADBD /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B52631744BB8B007AADBD /* UserModel.m */; };
+		01C3BE3F1741024900C75915 /* LmsConnectionRestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C3BE3E1741024900C75915 /* LmsConnectionRestApi.m */; };
+		01FDBB381740B60E0078727B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FDBB371740B60E0078727B /* Foundation.framework */; };
+		01FDBB3D1740B60E0078727B /* Connector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01FDBB3C1740B60E0078727B /* Connector.h */; };
+		01FDBB3F1740B60E0078727B /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FDBB3E1740B60E0078727B /* Connector.m */; };
+		01FDBB4A1740C6750078727B /* LmsConnectionLogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FDBB491740C6750078727B /* LmsConnectionLogIn.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		01FDBB321740B60E0078727B /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "include/${PRODUCT_NAME}";
+			dstSubfolderSpec = 16;
+			files = (
+				01FDBB3D1740B60E0078727B /* Connector.h in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		012B52621744BB8B007AADBD /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
+		012B52631744BB8B007AADBD /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		01C3BE3D1741024900C75915 /* LmsConnectionRestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsConnectionRestApi.h; sourceTree = "<group>"; };
+		01C3BE3E1741024900C75915 /* LmsConnectionRestApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsConnectionRestApi.m; sourceTree = "<group>"; };
+		01FDBB341740B60E0078727B /* libLmsRestConector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLmsRestConector.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		01FDBB371740B60E0078727B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		01FDBB3B1740B60E0078727B /* LmsRestConector-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "LmsRestConector-Prefix.pch"; sourceTree = "<group>"; };
+		01FDBB3C1740B60E0078727B /* Connector.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Connector.h; sourceTree = "<group>"; };
+		01FDBB3E1740B60E0078727B /* Connector.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Connector.m; sourceTree = "<group>"; };
+		01FDBB451740B6560078727B /* CalableLmsClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalableLmsClient.h; sourceTree = "<group>"; };
+		01FDBB481740C6740078727B /* LmsConnectionLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsConnectionLogIn.h; sourceTree = "<group>"; };
+		01FDBB491740C6750078727B /* LmsConnectionLogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsConnectionLogIn.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		01FDBB311740B60E0078727B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FDBB381740B60E0078727B /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		01FDBB2B1740B60E0078727B = {
+			isa = PBXGroup;
+			children = (
+				01FDBB391740B60E0078727B /* LmsRestConector */,
+				01FDBB361740B60E0078727B /* Frameworks */,
+				01FDBB351740B60E0078727B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		01FDBB351740B60E0078727B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				01FDBB341740B60E0078727B /* libLmsRestConector.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		01FDBB361740B60E0078727B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				01FDBB371740B60E0078727B /* Foundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		01FDBB391740B60E0078727B /* LmsRestConector */ = {
+			isa = PBXGroup;
+			children = (
+				012B52621744BB8B007AADBD /* UserModel.h */,
+				012B52631744BB8B007AADBD /* UserModel.m */,
+				01C3BE3D1741024900C75915 /* LmsConnectionRestApi.h */,
+				01C3BE3E1741024900C75915 /* LmsConnectionRestApi.m */,
+				01FDBB481740C6740078727B /* LmsConnectionLogIn.h */,
+				01FDBB491740C6750078727B /* LmsConnectionLogIn.m */,
+				01FDBB451740B6560078727B /* CalableLmsClient.h */,
+				01FDBB3A1740B60E0078727B /* Supporting Files */,
+			);
+			path = LmsRestConector;
+			sourceTree = "<group>";
+		};
+		01FDBB3A1740B60E0078727B /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				01FDBB3C1740B60E0078727B /* Connector.h */,
+				01FDBB3E1740B60E0078727B /* Connector.m */,
+				01FDBB3B1740B60E0078727B /* LmsRestConector-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		01FDBB331740B60E0078727B /* LmsRestConector */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 01FDBB421740B60E0078727B /* Build configuration list for PBXNativeTarget "LmsRestConector" */;
+			buildPhases = (
+				01FDBB301740B60E0078727B /* Sources */,
+				01FDBB311740B60E0078727B /* Frameworks */,
+				01FDBB321740B60E0078727B /* CopyFiles */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = LmsRestConector;
+			productName = LmsRestConector;
+			productReference = 01FDBB341740B60E0078727B /* libLmsRestConector.a */;
+			productType = "com.apple.product-type.library.static";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		01FDBB2C1740B60E0078727B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "alex zaikman";
+			};
+			buildConfigurationList = 01FDBB2F1740B60E0078727B /* Build configuration list for PBXProject "LmsRestConector" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 01FDBB2B1740B60E0078727B;
+			productRefGroup = 01FDBB351740B60E0078727B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				01FDBB331740B60E0078727B /* LmsRestConector */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXSourcesBuildPhase section */
+		01FDBB301740B60E0078727B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				01FDBB3F1740B60E0078727B /* Connector.m in Sources */,
+				01FDBB4A1740C6750078727B /* LmsConnectionLogIn.m in Sources */,
+				01C3BE3F1741024900C75915 /* LmsConnectionRestApi.m in Sources */,
+				012B52641744BB8B007AADBD /* UserModel.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		01FDBB401740B60E0078727B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		01FDBB411740B60E0078727B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		01FDBB431740B60E0078727B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LmsRestConector.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LmsRestConector/LmsRestConector-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Debug;
+		};
+		01FDBB441740B60E0078727B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				DSTROOT = /tmp/LmsRestConector.dst;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "LmsRestConector/LmsRestConector-Prefix.pch";
+				OTHER_LDFLAGS = "-ObjC";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SKIP_INSTALL = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		01FDBB2F1740B60E0078727B /* Build configuration list for PBXProject "LmsRestConector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01FDBB401740B60E0078727B /* Debug */,
+				01FDBB411740B60E0078727B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		01FDBB421740B60E0078727B /* Build configuration list for PBXNativeTarget "LmsRestConector" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				01FDBB431740B60E0078727B /* Debug */,
+				01FDBB441740B60E0078727B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 01FDBB2C1740B60E0078727B /* Project object */;
+}
