@@ -33,8 +33,7 @@ typedef enum{
 @synthesize classesView=_classesView;
 @synthesize state=_state;
 @synthesize callback=_callback;
-@synthesize domain=_domain
-
+@synthesize domain=_domain;
 
 
 -(id)initWithDomain: (NSString*)domain callback: (id<RestCallableClient>) callback{
@@ -71,7 +70,7 @@ typedef enum{
         //collect urls for images
         //advance state
         //call user call back
-        [self.callback sucsses:<#(NSDictionary *)#>]
+       // [self.callback sucsses:<#(NSDictionary *)#>]
     }
     
     

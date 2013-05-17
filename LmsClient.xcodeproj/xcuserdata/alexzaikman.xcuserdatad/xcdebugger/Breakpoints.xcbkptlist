@@ -208,8 +208,8 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "118"
          endingLineNumber = "118"
-         landmarkName = "-didReceiveData:"
-         landmarkType = "5">
+         landmarkName = "@implementation UserModel"
+         landmarkType = "3">
       </FileBreakpoint>
       <FileBreakpoint
          shouldBeEnabled = "No"
@@ -234,7 +234,7 @@
          endingColumnNumber = "9223372036854775807"
          startingLineNumber = "120"
          endingLineNumber = "120"
-         landmarkName = "-didReceiveData:"
+         landmarkName = "-didFailWithError:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

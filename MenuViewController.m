@@ -10,7 +10,7 @@
 #import "CalableLmsClient.h"
 #import "PresentorViewController.h"
 #import "LmsConnectionRestApi.h"
-#import "UserModel.h"
+
 
 @interface MenuViewController ()<CalableLmsClient>
 
@@ -54,7 +54,7 @@
 
 - (IBAction)debug {
     
-    UserModel* model = [[UserModel alloc]initWithDomin:@"https://cto.timetoknow.com"];
+  //  UserModel* model = [[UserModel alloc]initWithDomin:@"https://cto.timetoknow.com"];
     
                     
 }

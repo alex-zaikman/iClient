@@ -13,7 +13,7 @@
 @interface UserModel ()<CalableLmsClient>
 
 typedef enum{
-    APP_DATA
+    APP_DATA,
     STUDY_CLASSES
     
     
