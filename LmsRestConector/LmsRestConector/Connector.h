@@ -10,7 +10,7 @@
 #import "CalableLmsClient.h"
 @interface Connector : NSObject
 
-#define subDomain @"/lms"
+
 
 - (void) sendGetTo: (NSString*)url withVariable:(NSDictionary*)var callBack:(id<CalableLmsClient>) callback;
 

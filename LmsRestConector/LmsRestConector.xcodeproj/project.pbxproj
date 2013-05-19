@@ -7,7 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012B52641744BB8B007AADBD /* UserModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 012B52631744BB8B007AADBD /* UserModel.m */; };
+		0134D3151748AC6B00C50ED9 /* HomeViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0134D3141748AC6B00C50ED9 /* HomeViewModel.m */; };
 		01C3BE3F1741024900C75915 /* LmsConnectionRestApi.m in Sources */ = {isa = PBXBuildFile; fileRef = 01C3BE3E1741024900C75915 /* LmsConnectionRestApi.m */; };
 		01FDBB381740B60E0078727B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 01FDBB371740B60E0078727B /* Foundation.framework */; };
 		01FDBB3D1740B60E0078727B /* Connector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01FDBB3C1740B60E0078727B /* Connector.h */; };
@@ -29,8 +29,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
-		012B52621744BB8B007AADBD /* UserModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UserModel.h; sourceTree = "<group>"; };
-		012B52631744BB8B007AADBD /* UserModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UserModel.m; sourceTree = "<group>"; };
+		0134D3131748AC6B00C50ED9 /* HomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewModel.h; sourceTree = "<group>"; };
+		0134D3141748AC6B00C50ED9 /* HomeViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewModel.m; sourceTree = "<group>"; };
 		01C3BE3D1741024900C75915 /* LmsConnectionRestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsConnectionRestApi.h; sourceTree = "<group>"; };
 		01C3BE3E1741024900C75915 /* LmsConnectionRestApi.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsConnectionRestApi.m; sourceTree = "<group>"; };
 		01FDBB341740B60E0078727B /* libLmsRestConector.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libLmsRestConector.a; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -83,12 +83,12 @@
 		01FDBB391740B60E0078727B /* LmsRestConector */ = {
 			isa = PBXGroup;
 			children = (
-				012B52621744BB8B007AADBD /* UserModel.h */,
-				012B52631744BB8B007AADBD /* UserModel.m */,
 				01C3BE3D1741024900C75915 /* LmsConnectionRestApi.h */,
 				01C3BE3E1741024900C75915 /* LmsConnectionRestApi.m */,
 				01FDBB481740C6740078727B /* LmsConnectionLogIn.h */,
 				01FDBB491740C6750078727B /* LmsConnectionLogIn.m */,
+				0134D3131748AC6B00C50ED9 /* HomeViewModel.h */,
+				0134D3141748AC6B00C50ED9 /* HomeViewModel.m */,
 				01FDBB451740B6560078727B /* CalableLmsClient.h */,
 				01FDBB3A1740B60E0078727B /* Supporting Files */,
 			);
@@ -159,7 +159,7 @@
 				01FDBB3F1740B60E0078727B /* Connector.m in Sources */,
 				01FDBB4A1740C6750078727B /* LmsConnectionLogIn.m in Sources */,
 				01C3BE3F1741024900C75915 /* LmsConnectionRestApi.m in Sources */,
-				012B52641744BB8B007AADBD /* UserModel.m in Sources */,
+				0134D3151748AC6B00C50ED9 /* HomeViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

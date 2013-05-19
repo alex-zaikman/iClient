@@ -19,7 +19,7 @@
 
 static Connector* connection;
 
-+ (void) lmsGetAppDataFrom:(NSString*)domain dictionaryModified:(NSNumber*)modified callBackTarget:(id<CalableLmsClient>)target;{
++ (void) lmsGetAppDataFrom:(NSString*)domain dictionaryModified:(NSNumber*)modified callBackTarget:(id<CalableLmsClient>)target{
     
     if(!connection)
             connection = [[Connector alloc]init];
@@ -30,7 +30,7 @@ static Connector* connection;
   if(modified!=nil)
       vars = [[NSDictionary alloc]initWithObjectsAndKeys:@"dictionaryModified", [modified stringValue] , nil];
     
-  NSString *url = [[domain stringByAppendingString:subDomain ]stringByAppendingString:@"/rest/appdata"];
+  NSString *url = [domain stringByAppendingString:@"/lms/rest/appdata"];
  [connection sendGetTo:url withVariable:vars callBack:target];
     
 }
@@ -40,8 +40,7 @@ static Connector* connection;
     
     NSMutableString *url = [[NSMutableString alloc]init];
     [url appendString:domain];
-    [url appendString:subDomain];
-    [url appendString:@"/rest/schools/"];
+    [url appendString:@"/lms/rest/schools/"];
     [url appendString:[schoolid stringValue]];
     [url appendString:@"/images"];
     [url appendString:[imageid stringValue]];
@@ -55,8 +54,7 @@ static Connector* connection;
     NSMutableString *url = [[NSMutableString alloc]init];
    
     [url appendString:domain];
-    [url appendString:subDomain];
-    [url appendString:@"/rest/teachers/"];
+    [url appendString:@"/lms/rest/teachers/"];
     [url appendString:[teacherid stringValue]];
     [url appendString:@"/studyclasses"];
     
@@ -67,8 +65,7 @@ static Connector* connection;
     NSMutableString *url = [[NSMutableString alloc]init];
     
     [url appendString:domain];
-    [url appendString:subDomain];
-    [url appendString:@"/rest/students/"];
+    [url appendString:@"/lms/rest/students/"];
     [url appendString:[studentid stringValue]];
     [url appendString:@"/studyclasses"];
     
@@ -79,7 +76,7 @@ static Connector* connection;
     
     NSDictionary* vars =  [[NSDictionary alloc]initWithObjectsAndKeys:@"query", query , nil];
     
-    NSString *url = [[domain stringByAppendingString:subDomain ]stringByAppendingString:@"/rest/appdata"];
+    NSString *url = [domain stringByAppendingString:@"/lms/rest/appdata"];
     [connection sendGetTo:url withVariable:vars callBack:target];
     
 }
@@ -88,8 +85,7 @@ static Connector* connection;
     NSMutableString *url = [[NSMutableString alloc]init];
     
     [url appendString:domain];
-    [url appendString:subDomain];
-    [url appendString:@"/rest/schools/"];
+    [url appendString:@"/lms/rest/schools/"];
     [url appendString:[schoolid stringValue]];
     [url appendString:@"/courseinfos"];
     
@@ -138,8 +134,7 @@ static Connector* connection;
     NSMutableString *url = [[NSMutableString alloc]init];
     
     [url appendString:domain];
-    [url appendString:subDomain];
-    [url appendString:@"/rest/users/"];
+    [url appendString:@"/lms/rest/users/"];
     [url appendString:[userid stringValue]];
     [url appendString:@"/usercourseinfos"];
     
@@ -168,8 +163,7 @@ static Connector* connection;
     NSMutableString *url = [[NSMutableString alloc]init];
     
     [url appendString:domain];
-    [url appendString:subDomain];
-    [url appendString:@"/rest/userlibrary/courses/"];
+    [url appendString:@"/lms/rest/userlibrary/courses/"];
     [url appendString:[courseid stringValue]];
     
     [connection sendGetTo:url withVariable:nil callBack:target];
@@ -181,16 +175,13 @@ static Connector* connection;
     NSMutableString *url = [[NSMutableString alloc]init];
     
     [url appendString:domain];
-    [url appendString:subDomain];
-    [url appendString:@"/rest/userlibrary/courses/"];
+    [url appendString:@"/lms/rest/userlibrary/courses/"];
     [url appendString:[courseid stringValue]];
     [url appendString:@"lessons/"];
     [url appendString:[lessonCid stringValue]];
     
     [connection sendGetTo:url withVariable:nil callBack:target];
 }
-
-
 
 
 

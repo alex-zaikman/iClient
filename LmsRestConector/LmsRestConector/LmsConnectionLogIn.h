@@ -21,8 +21,5 @@ typedef enum {
 /* domain should have https:// and no trailing /  */
 - (void) LogInTo:(NSString*)domain asUser:(NSString *)user withPassword:(NSString*)password callBackTarget:(id<CalableLmsClient>)target;
 
-// -(void) LogOut;  TODO call the rest api and logout
-    
-
 
 @end

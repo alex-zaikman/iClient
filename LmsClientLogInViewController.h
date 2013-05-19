@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 alex zaikman. All rights reserved.
 //
 
-#import <Foundation/Foundation.h>
+#import <UIKit/UIKit.h>
 
-@interface LmsClientLogInViewController : NSObject
+@interface LmsClientLogInViewController : UIViewController
 
 @end

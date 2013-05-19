@@ -10,4 +10,6 @@
 
 @implementation LmsClientClassViewController
 
+@synthesize data=_data;
+
 @end

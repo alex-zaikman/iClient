@@ -8,6 +8,8 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LmsClientClassViewController : NSObject
+@interface LmsClientClassViewController : UICollectionViewController <UICollectionViewDelegate>
+
+@property (nonatomic,strong) NSDictionary *data;
 
 @end

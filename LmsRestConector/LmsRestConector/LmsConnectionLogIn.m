@@ -103,8 +103,8 @@
     
     self.vars = [[NSMutableDictionary alloc]initWithCapacity:2];
     
-    [self.connection sendGetTo:[self.domain stringByAppendingString:subDomain] withVariable:self.vars callBack:self];
-     
+    [self.connection sendGetTo:[self.domain stringByAppendingString:@"/lms"] withVariable:self.vars callBack:self];
+    
 }
 
 - (void) didReceiveData:(NSData *)data{
@@ -143,6 +143,9 @@
    if (self.state==STEP2)
        [self.target didReceiveResponse:response];
 }
+
+
+
 
 
 @end
