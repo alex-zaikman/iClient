@@ -2,14 +2,12 @@
 //  LmsClientAppDelegate.h
 //  LmsClient
 //
-//  Created by alex zaikman on 5/13/13.
+//  Created by alex zaikman on 5/19/13.
 //  Copyright (c) 2013 alex zaikman. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
-@interface LmsClientAppDelegate : UIResponder <UIApplicationDelegate>
-
-@property (strong, nonatomic) UIWindow *window;
+@interface LmsClientAppDelegate : NSObject
 
 @end
