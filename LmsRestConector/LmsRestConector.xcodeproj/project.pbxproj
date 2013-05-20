@@ -55,6 +55,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		018BD083174A6C2D0050CF8F /* View model */ = {
+			isa = PBXGroup;
+			children = (
+				0134D3131748AC6B00C50ED9 /* HomeViewModel.h */,
+				0134D3141748AC6B00C50ED9 /* HomeViewModel.m */,
+			);
+			name = "View model";
+			sourceTree = "<group>";
+		};
+		018BD084174A6C4A0050CF8F /* protocols */ = {
+			isa = PBXGroup;
+			children = (
+				01FDBB451740B6560078727B /* CalableLmsClient.h */,
+			);
+			name = protocols;
+			sourceTree = "<group>";
+		};
 		01FDBB2B1740B60E0078727B = {
 			isa = PBXGroup;
 			children = (
@@ -83,13 +100,12 @@
 		01FDBB391740B60E0078727B /* LmsRestConector */ = {
 			isa = PBXGroup;
 			children = (
+				018BD084174A6C4A0050CF8F /* protocols */,
+				018BD083174A6C2D0050CF8F /* View model */,
 				01C3BE3D1741024900C75915 /* LmsConnectionRestApi.h */,
 				01C3BE3E1741024900C75915 /* LmsConnectionRestApi.m */,
 				01FDBB481740C6740078727B /* LmsConnectionLogIn.h */,
 				01FDBB491740C6750078727B /* LmsConnectionLogIn.m */,
-				0134D3131748AC6B00C50ED9 /* HomeViewModel.h */,
-				0134D3141748AC6B00C50ED9 /* HomeViewModel.m */,
-				01FDBB451740B6560078727B /* CalableLmsClient.h */,
 				01FDBB3A1740B60E0078727B /* Supporting Files */,
 			);
 			path = LmsRestConector;
