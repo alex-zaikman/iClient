@@ -8,8 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
-@interface LmsClientClassViewController : UICollectionViewController <UICollectionViewDelegate>
+@interface LmsClientClassViewController : UICollectionViewController <UICollectionViewDataSource,UICollectionViewDelegate>
 
 @property (nonatomic,strong) NSDictionary *data;
+
 
 @end

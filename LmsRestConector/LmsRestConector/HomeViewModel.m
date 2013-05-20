@@ -133,7 +133,7 @@ void (^fnfaliure)(NSError *);
             
         }
         
-    [self.data setValue:classes forKeyPath:@"classes"];
+    [self.data setValue:classes forKey:@"classes"];
         
      fnsuccess(self.data);
 
