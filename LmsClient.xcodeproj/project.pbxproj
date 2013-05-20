@@ -16,6 +16,7 @@
 		018BD072174A12590050CF8F /* LmsClientUICollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 018BD071174A12590050CF8F /* LmsClientUICollectionCell.m */; };
 		018BD074174A30160050CF8F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 018BD073174A30160050CF8F /* Settings.bundle */; };
 		018BD07C174A6A370050CF8F /* LmsClientCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018BD07B174A6A370050CF8F /* LmsClientCourseViewController.m */; };
+		018BD087174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018BD086174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m */; };
 		01C3BE341740F44900C75915 /* LmsConnectionLogIn.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE331740F44900C75915 /* LmsConnectionLogIn.h */; };
 		01C3BE391740F5C900C75915 /* CalableLmsClient.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE381740F5C900C75915 /* CalableLmsClient.h */; };
 		01C3BE41174107FC00C75915 /* LmsConnectionRestApi.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE40174107FC00C75915 /* LmsConnectionRestApi.h */; };
@@ -55,6 +56,8 @@
 		018BD073174A30160050CF8F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 		018BD07A174A6A370050CF8F /* LmsClientCourseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientCourseViewController.h; sourceTree = "<group>"; };
 		018BD07B174A6A370050CF8F /* LmsClientCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientCourseViewController.m; sourceTree = "<group>"; };
+		018BD085174A6DFA0050CF8F /* LmsClientCourseMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientCourseMasterViewController.h; sourceTree = "<group>"; };
+		018BD086174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientCourseMasterViewController.m; sourceTree = "<group>"; };
 		01C3BE331740F44900C75915 /* LmsConnectionLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LmsConnectionLogIn.h; path = ../../LmsRestConector/LmsRestConector/LmsConnectionLogIn.h; sourceTree = "<group>"; };
 		01C3BE381740F5C900C75915 /* CalableLmsClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CalableLmsClient.h; path = ../LmsRestConector/LmsRestConector/CalableLmsClient.h; sourceTree = "<group>"; };
 		01C3BE40174107FC00C75915 /* LmsConnectionRestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LmsConnectionRestApi.h; path = ../LmsRestConector/LmsRestConector/LmsConnectionRestApi.h; sourceTree = "<group>"; };
@@ -143,6 +146,8 @@
 			children = (
 				018BD07A174A6A370050CF8F /* LmsClientCourseViewController.h */,
 				018BD07B174A6A370050CF8F /* LmsClientCourseViewController.m */,
+				018BD085174A6DFA0050CF8F /* LmsClientCourseMasterViewController.h */,
+				018BD086174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m */,
 			);
 			name = course;
 			sourceTree = "<group>";
@@ -301,6 +306,7 @@
 				018BD0681748E0FA0050CF8F /* LmsClientClassViewController.m in Sources */,
 				018BD072174A12590050CF8F /* LmsClientUICollectionCell.m in Sources */,
 				018BD07C174A6A370050CF8F /* LmsClientCourseViewController.m in Sources */,
+				018BD087174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
