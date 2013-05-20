@@ -12,6 +12,7 @@
 @implementation LmsClientClassViewController
 
 @synthesize data=_data;
+@synthesize sayHello=_sayHello;
 
 -(void)viewDidLoad{
     [self.collectionView registerClass:[LmsClientUICollectionCell class] forCellWithReuseIdentifier:@"cell"];
