@@ -37,11 +37,93 @@
                     <connections>
                         <outlet property="sayHello" destination="wFo-Oe-HnZ" id="qyK-ej-qQP"/>
                         <outlet property="view" destination="bUQ-wD-hDU" id="Y0U-JU-VOa"/>
+                        <segue destination="Mbl-MN-iLR" kind="push" identifier="course" id="Hcr-HY-DDe"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ara-Em-4id" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1236" y="-167"/>
+            <point key="canvasLocation" x="1084" y="-143"/>
+        </scene>
+        <!--Lms Client Course View Controller-->
+        <scene sceneID="MQo-tm-xw2">
+            <objects>
+                <viewController id="txd-lZ-ZM4" customClass="LmsClientCourseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="p0Y-Gq-oTB">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <toolbarItems/>
+                    <connections>
+                        <outlet property="view" destination="p0Y-Gq-oTB" id="hgZ-kJ-wd3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xKC-XM-RPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3534" y="344"/>
+        </scene>
+        <!--Lms Client Course Master View Controller - Root View Controller-->
+        <scene sceneID="DTW-Ei-WNW">
+            <objects>
+                <tableViewController clearsSelectionOnViewWillAppear="NO" id="Kr0-37-0cZ" customClass="LmsClientCourseMasterViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="L13-fZ-NPK">
+                        <rect key="frame" x="0.0" y="64" width="320" height="788"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" id="sWs-FX-gru">
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="Kr0-37-0cZ" id="rwo-pi-aKh"/>
+                            <outlet property="delegate" destination="Kr0-37-0cZ" id="XAC-bK-7oq"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Re5-O2-tEm"/>
+                    <connections>
+                        <outlet property="view" destination="L13-fZ-NPK" id="jCU-zH-nOA"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QFe-06-umc" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="4062" y="-596"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="Jbw-iv-m1M">
+            <objects>
+                <navigationController id="haA-qU-MaZ" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="bKM-l1-lpy">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="Kr0-37-0cZ" kind="relationship" relationship="rootViewController" id="Zzj-f6-42t"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Uo6-0h-sGj" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3534" y="-596"/>
+        </scene>
+        <!--Split View Controller-->
+        <scene sceneID="pJU-85-Qmx">
+            <objects>
+                <splitViewController id="Mbl-MN-iLR" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="d7N-6K-aN4"/>
+                    <connections>
+                        <segue destination="haA-qU-MaZ" kind="relationship" relationship="masterViewController" id="k8r-5m-hYx"/>
+                        <segue destination="txd-lZ-ZM4" kind="relationship" relationship="detailViewController" id="B2Q-w5-2k3"/>
+                    </connections>
+                </splitViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jjq-fJ-G1d" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2550" y="-128"/>
         </scene>
         <!--Lms Client Log In View Controller - Log In-->
         <scene sceneID="HsK-fT-aLR">
@@ -145,6 +227,47 @@
     <resources>
         <image name="login.jpg" width="1280" height="800"/>
     </resources>
+    <classes>
+        <class className="LmsClientClassViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientClassViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="sayHello" candidateClass="UINavigationItem"/>
+            </relationships>
+        </class>
+        <class className="LmsClientCourseMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientCourseMasterViewController.h"/>
+        </class>
+        <class className="LmsClientCourseViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientCourseViewController.h"/>
+        </class>
+        <class className="LmsClientLogInViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientLogInViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="output" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="pass" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="user" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="waitting" candidateClass="UIActivityIndicatorView"/>
+            </relationships>
+        </class>
+        <class className="LmsClientUICollectionCell" superclassName="UICollectionViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientUICollectionCell.h"/>
+        </class>
+        <class className="UICollectionReusableView" superclassName="UIView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionReusableView.h"/>
+        </class>
+        <class className="UICollectionViewCell" superclassName="UICollectionReusableView">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewCell.h"/>
+        </class>
+        <class className="UICollectionViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewController.h"/>
+        </class>
+        <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
+        </class>
+        <class className="UICollectionViewLayout" superclassName="NSObject">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
+        </class>
+    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar" statusBarStyle="blackTranslucent"/>
         <simulatedOrientationMetrics key="orientation"/>
