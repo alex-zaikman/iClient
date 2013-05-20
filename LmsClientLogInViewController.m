@@ -36,7 +36,7 @@
     LmsConnectionLogIn *log = [[LmsConnectionLogIn alloc]init];
     
     [self.waitting startAnimating];
-    [log LogInTo:@"https://cto.timetoknow.com" asUser:self.user.text withPassword:self.pass.text callBackTarget:self];
+    [log LogInTo:[[NSUserDefaults standardUserDefaults] stringForKey:@"domain_preference"] asUser:self.user.text withPassword:self.pass.text callBackTarget:self];
     
 }
                                                        
@@ -70,8 +70,7 @@
     self.hvm = [[HomeViewModel alloc]init];
     
 
-    
-    [self.hvm getDataQueryDomain:@"https://cto.timetoknow.com" OnSuccessCall:
+    [self.hvm getDataQueryDomain:[[NSUserDefaults standardUserDefaults] stringForKey:@"domain_preference"] OnSuccessCall:
     
      ^(NSDictionary *dic ){
          self.data = dic;

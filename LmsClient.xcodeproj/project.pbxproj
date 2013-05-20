@@ -15,6 +15,7 @@
 		018BD0681748E0FA0050CF8F /* LmsClientClassViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018BD0671748E0FA0050CF8F /* LmsClientClassViewController.m */; };
 		018BD06A1748F1EE0050CF8F /* HomeViewModel.h in Resources */ = {isa = PBXBuildFile; fileRef = 018BD0691748F1EE0050CF8F /* HomeViewModel.h */; };
 		018BD072174A12590050CF8F /* LmsClientUICollectionCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 018BD071174A12590050CF8F /* LmsClientUICollectionCell.m */; };
+		018BD074174A30160050CF8F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 018BD073174A30160050CF8F /* Settings.bundle */; };
 		01C3BE341740F44900C75915 /* LmsConnectionLogIn.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE331740F44900C75915 /* LmsConnectionLogIn.h */; };
 		01C3BE391740F5C900C75915 /* CalableLmsClient.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE381740F5C900C75915 /* CalableLmsClient.h */; };
 		01C3BE41174107FC00C75915 /* LmsConnectionRestApi.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE40174107FC00C75915 /* LmsConnectionRestApi.h */; };
@@ -52,6 +53,7 @@
 		018BD0691748F1EE0050CF8F /* HomeViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = HomeViewModel.h; path = ../LmsRestConector/LmsRestConector/HomeViewModel.h; sourceTree = "<group>"; };
 		018BD070174A12590050CF8F /* LmsClientUICollectionCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientUICollectionCell.h; sourceTree = "<group>"; };
 		018BD071174A12590050CF8F /* LmsClientUICollectionCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientUICollectionCell.m; sourceTree = "<group>"; };
+		018BD073174A30160050CF8F /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; name = Settings.bundle; path = ../Settings.bundle; sourceTree = "<group>"; };
 		01C3BE331740F44900C75915 /* LmsConnectionLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LmsConnectionLogIn.h; path = ../LmsRestConector/LmsRestConector/LmsConnectionLogIn.h; sourceTree = "<group>"; };
 		01C3BE381740F5C900C75915 /* CalableLmsClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CalableLmsClient.h; path = ../LmsRestConector/LmsRestConector/CalableLmsClient.h; sourceTree = "<group>"; };
 		01C3BE40174107FC00C75915 /* LmsConnectionRestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LmsConnectionRestApi.h; path = ../LmsRestConector/LmsRestConector/LmsConnectionRestApi.h; sourceTree = "<group>"; };
@@ -132,6 +134,7 @@
 		01FDBB0F1740B5BF0078727B /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				018BD073174A30160050CF8F /* Settings.bundle */,
 				018BD0691748F1EE0050CF8F /* HomeViewModel.h */,
 				0134D3161748CC9100C50ED9 /* login.jpg */,
 				012B526A1744ECF6007AADBD /* ClassesViewModel.h */,
@@ -229,6 +232,7 @@
 				012B526B1744ECF6007AADBD /* ClassesViewModel.h in Resources */,
 				0134D3171748CC9100C50ED9 /* login.jpg in Resources */,
 				018BD06A1748F1EE0050CF8F /* HomeViewModel.h in Resources */,
+				018BD074174A30160050CF8F /* Settings.bundle in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

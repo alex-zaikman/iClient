@@ -35,7 +35,7 @@
     
     NSString *url = (NSString*)[(NSDictionary*)[(NSArray*)[self.data valueForKey:@"classes"] objectAtIndex:indexPath.item] valueForKey:@"imageURL"];
     
-    url = [@"https://cto.timetoknow.com/" stringByAppendingString:url];
+    url = [[[NSUserDefaults standardUserDefaults] stringForKey:@"domain_preference"] stringByAppendingString: [@"/" stringByAppendingString:url]];
   
     
     
