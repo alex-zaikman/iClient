@@ -46,18 +46,13 @@
     [cell setBackgroundColor: [UIColor colorWithRed:255/255.0f green:237/255.0f blue:108/255.0f alpha:1.0f]];
 
 
-     
     [cell setBackgroundView:[[UIImageView alloc]initWithImage:img]];
-
-    
-//      NSString *fname = (NSString*)[(NSDictionary*)[self.data valueForKey:@"user"] valueForKey:@"firstName"];
-//    
-//      NSString *lname = (NSString*)[(NSDictionary*)[self.data valueForKey:@"user"] valueForKey:@"lastName"];
-
   
      NSString *className = (NSString*)[(NSDictionary*)[(NSArray*)[self.data valueForKey:@"classes"] objectAtIndex:indexPath.item] valueForKey:@"className"];
 
     cell.lable.text = className;
+    
+    cell.tag = (NSInteger)[(NSDictionary*)[(NSArray*)[self.data valueForKey:@"classes"] objectAtIndex:indexPath.item] valueForKey:@"classId"];
     
     return cell;
 }
@@ -68,8 +63,8 @@
 {
     // TODO: Select Item
 }
-- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
-    // TODO: Deselect item
-}
+//- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
+//    // TODO: Deselect item
+//}
 
 @end

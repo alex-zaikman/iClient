@@ -60,7 +60,6 @@
 }
 
 
-- (void )qqq:( NSError *)dddd{}
 
 - (void) didFinishLoading{
   
@@ -75,8 +74,6 @@
      ^(NSDictionary *dic ){
          self.data = dic;
          [self performSegueWithIdentifier:@"classes" sender:self];
-       //  [self performSegueWithIdentifier:@"table" sender:self];
-         
          
      }
     onFailureCall:
