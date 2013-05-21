@@ -154,21 +154,27 @@ void (^fnfaliure)(NSError *);
             
             NSMutableDictionary *chapterToAdd = [[NSMutableDictionary alloc]init];
 
-            [chapterToAdd setValue:@"cid" forKey:[chapter valueForKey:@"cid"]];
-            [chapterToAdd setValue:@"title" forKey:[chapter valueForKey:@"title"]];
-            [chapterToAdd setValue:@"overview" forKey:[chapter valueForKey:@"overview"]];
+            [chapterToAdd setValue:[chapter valueForKey:@"cid"] forKey:@"cid"];
+            [chapterToAdd setValue:[chapter valueForKey:@"title"] forKey:@"title"];
+            [chapterToAdd setValue:[chapter valueForKey:@"overview"] forKey:@"overview"];
             
+           
             NSMutableArray *lessonsToAdd = [[NSMutableArray alloc]init];
             
             NSArray *lessons = [chapter valueForKey:@"lessons"];
             for(NSDictionary *lesson in lessons)
             {
+                NSMutableDictionary *lessonToAdd = [[NSMutableDictionary alloc]init];
                 
-                [lessonsToAdd setValue:@"cid" forKey:[lesson valueForKey:@"cid"]];
-                [lessonsToAdd setValue:@"title" forKey:[lesson valueForKey:@"title"]];
+                [lessonToAdd setValue:[lesson valueForKey:@"cid"] forKey:@"cid"];
+                [lessonToAdd setValue:[lesson valueForKey:@"title"] forKey:@"title"];
                 
-                [chapterToAdd setValue:lessonsToAdd forKey:@"lessons"];
+                [lessonsToAdd addObject:lessonToAdd];
             }
+            
+            [chapterToAdd setValue:lessonsToAdd forKey:@"lessons"];
+            
+            
             [chaptersToAdd addObject:chapterToAdd];
         }
         

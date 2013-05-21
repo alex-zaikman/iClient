@@ -20,6 +20,8 @@
 
 -(void) errorMsgToDisplay: (NSError*)err{
     self.errorMsg.text=[err localizedDescription];
+    [self.view setNeedsDisplay];
+    
 }
 
 @end

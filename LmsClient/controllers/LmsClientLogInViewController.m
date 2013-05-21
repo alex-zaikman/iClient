@@ -89,7 +89,6 @@
      ^(NSDictionary *dic ){
          self.data = dic;
          [self performSegueWithIdentifier:@"classes" sender:self];
-         
      }
     onFailureCall:
      ^(NSError *e){
@@ -103,26 +102,15 @@
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
+
+    
     if ([[segue identifier] isEqualToString:@"classes"])
     {
         self.loading.hidden=NO;
         [self.loading startAnimating];
         [segue.destinationViewController performSelector:@selector(setData:)
                                               withObject:self.data];
-        
-        
-        
-             NSString *fname = (NSString*)[(NSDictionary*)[self.data valueForKey:@"user"] valueForKey:@"firstName"];
-        
-            NSString *lname = (NSString*)[(NSDictionary*)[self.data valueForKey:@"user"] valueForKey:@"lastName"];
-        
-        
-        NSString *greet = [@"Welcome " stringByAppendingString:[lname stringByAppendingString:fname]];
-        
-        [segue.destinationViewController performSelector:@selector(setSayHello:)
-                                              withObject:greet];
-        
-        
+         
     }
             [self.loading stopAnimating];
             self.loading.hidden=YES;

@@ -10,11 +10,25 @@
 
 @interface LmsClientCourseViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextView *debug;
 @end
 
 @implementation LmsClientCourseViewController
 
 @synthesize data=_data;
 
+@synthesize debug=_debug;
+
+
+-(void)viewDidLoad{
+    NSError* error;
+    NSData* jsonData = [NSJSONSerialization dataWithJSONObject:self.data
+                                                       options:NSJSONWritingPrettyPrinted error:&error];
+    NSString* newStr = [[NSString alloc] initWithData:jsonData
+                                              encoding:NSUTF8StringEncoding];
+
+
+    self.debug.text=newStr;
+}
 
 @end

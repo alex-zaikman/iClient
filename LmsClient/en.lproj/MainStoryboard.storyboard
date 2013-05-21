@@ -4,6 +4,113 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--Lms Client Course Master View Controller-->
+        <scene sceneID="unn-v6-kgz">
+            <objects>
+                <tableViewController id="HCO-ed-qPR" customClass="LmsClientCourseMasterViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" rowHeight="87" sectionHeaderHeight="22" sectionFooterHeight="22" id="8lG-wr-wcD">
+                        <rect key="frame" x="0.0" y="64" width="320" height="788"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" textLabel="8jd-l8-UWz" rowHeight="87" style="IBUITableViewCellStyleDefault" id="aKc-aa-g9V">
+                                <rect key="frame" x="0.0" y="22" width="320" height="87"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="86"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="left" usesAttributedText="YES" lineBreakMode="wordWrap" numberOfLines="6" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8jd-l8-UWz">
+                                            <rect key="frame" x="10" y="0.0" width="300" height="86"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <attributedString key="attributedText">
+                                                <fragment content="Title">
+                                                    <attributes>
+                                                        <color key="NSColor" cocoaTouchSystemColor="darkTextColor"/>
+                                                        <font key="NSFont" size="20" name="Helvetica-Bold"/>
+                                                        <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="natural"/>
+                                                    </attributes>
+                                                </fragment>
+                                            </attributedString>
+                                            <color key="highlightedColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="HCO-ed-qPR" id="B6m-ly-ULN"/>
+                            <outlet property="delegate" destination="HCO-ed-qPR" id="YPM-2O-m6j"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" id="VYo-UN-X0R"/>
+                    <connections>
+                        <outlet property="view" destination="8lG-wr-wcD" id="CxF-3S-UYd"/>
+                        <segue destination="Jcj-hT-hOj" kind="push" identifier="chapteroverview" splitViewControllerTargetIndex="1" id="5rP-fz-p8m"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7D7-Fm-RlJ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="975" y="-2052"/>
+        </scene>
+        <!--Lms Client Chapter Overview View Controller-->
+        <scene sceneID="xU7-v7-vFw">
+            <objects>
+                <viewController id="Jcj-hT-hOj" customClass="LmsClientChapterOverviewViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="xE0-u3-dVf">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="overview" id="5Hw-Mg-9KD">
+                                <rect key="frame" x="20" y="20" width="728" height="920"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="G9H-5w-FtK"/>
+                    <connections>
+                        <outlet property="overviewOut" destination="5Hw-Mg-9KD" id="bgs-OE-WeE"/>
+                        <outlet property="view" destination="xE0-u3-dVf" id="E5U-bQ-FZm"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Sdo-cU-pUo" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1929" y="-2657"/>
+        </scene>
+        <!--Lms Client Course View Controller-->
+        <scene sceneID="4KF-TM-zey">
+            <objects>
+                <viewController id="Gc4-Iz-7nY" customClass="LmsClientCourseViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="oAf-iO-GzN">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" id="L5f-3q-Uqh">
+                                <rect key="frame" x="20" y="20" width="733" height="920"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <string key="text">Lorem ipsum dolor sit er elit lamet, consectetaur cillium adipisicing pecu, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Nam liber te conscient to factor tum poen legum odioque civiuda.</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="9tP-RS-0ig"/>
+                    <connections>
+                        <outlet property="debug" destination="L5f-3q-Uqh" id="2gE-lD-PUE"/>
+                        <outlet property="view" destination="oAf-iO-GzN" id="cs0-CZ-AeN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3aJ-7h-VBb" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2845" y="-1763"/>
+        </scene>
         <!--Lms Client Error View Controller-->
         <scene sceneID="McJ-6A-Zl6">
             <objects>
@@ -43,7 +150,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xar-Qc-mvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3158" y="-1509"/>
+            <point key="canvasLocation" x="3182" y="-553"/>
         </scene>
         <!--Lms Client Class View Controller-->
         <scene sceneID="EfJ-4B-vCd">
@@ -76,15 +183,16 @@
                     </collectionView>
                     <navigationItem key="navigationItem" id="wFo-Oe-HnZ"/>
                     <connections>
-                        <outlet property="sayHello" destination="wFo-Oe-HnZ" id="qyK-ej-qQP"/>
                         <outlet property="view" destination="bUQ-wD-hDU" id="Y0U-JU-VOa"/>
                         <segue destination="gf6-sr-yva" kind="push" identifier="nocourse" splitViewControllerTargetIndex="1" id="Kqs-9H-H6j"/>
                         <segue destination="4ll-C1-M9O" kind="push" identifier="error" splitViewControllerTargetIndex="1" id="xba-8c-b4j"/>
+                        <segue destination="Gc4-Iz-7nY" kind="push" identifier="course" splitViewControllerTargetIndex="1" id="oQ6-6m-ZZm"/>
+                        <segue destination="HCO-ed-qPR" kind="push" identifier="courseMaster" splitViewControllerTargetIndex="0" id="T8w-lk-PAT"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ara-Em-4id" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2058" y="-143"/>
+            <point key="canvasLocation" x="1722" y="-931"/>
         </scene>
         <!--Lms Client Course View Controller-->
         <scene sceneID="MQo-tm-xw2">
@@ -104,22 +212,25 @@
             </objects>
             <point key="canvasLocation" x="3478" y="3184"/>
         </scene>
-        <!--View Controller - Welcome-->
+        <!--Lms Client Class Master View Controller - Welcome-->
         <scene sceneID="Lik-fn-GY0">
             <objects>
-                <viewController id="rn3-D3-O6P" sceneMemberID="viewController">
+                <viewController id="rn3-D3-O6P" customClass="LmsClientClassMasterViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="YvF-GD-p4f">
                         <rect key="frame" x="0.0" y="64" width="320" height="788"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="QF5-8i-ODy">
-                                <rect key="frame" x="0.0" y="0.0" width="320" height="788"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="logo.jpg" id="QF5-8i-ODy">
+                                <rect key="frame" x="6" y="10" width="182" height="116"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" title="Welcome" id="vq6-fX-ivh"/>
+                    <connections>
+                        <outlet property="view" destination="YvF-GD-p4f" id="RoC-Xr-WoV"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="qQJ-AQ-KEi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -228,11 +339,12 @@
                         <outlet property="user" destination="QMZ-gi-5BA" id="32k-tg-16B"/>
                         <outlet property="waitting" destination="lOX-h0-H3g" id="JOd-Mz-DM9"/>
                         <segue destination="BFg-Ut-hkE" kind="push" identifier="classes" splitViewControllerTargetIndex="1" id="p11-S7-3YR"/>
+                        <segue destination="rn3-D3-O6P" kind="push" identifier="sayhello" splitViewControllerTargetIndex="0" id="YDD-AY-kx4"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Twp-fg-fF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="756" y="-143"/>
+            <point key="canvasLocation" x="804" y="-39"/>
         </scene>
         <!--View Controller - Course-->
         <scene sceneID="ytM-5p-jKN">
@@ -242,8 +354,8 @@
                         <rect key="frame" x="0.0" y="64" width="768" height="960"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="There is no coures assigend to this class." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nTj-gz-ctc">
-                                <rect key="frame" x="45" y="40" width="435" height="21"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="There is no course assigend to this class." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nTj-gz-ctc">
+                                <rect key="frame" x="45" y="40" width="435" height="24"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="20"/>
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
@@ -256,7 +368,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="moe-Sy-Sbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3158" y="-209"/>
+            <point key="canvasLocation" x="3270" y="847"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="dq1-zw-S48">
@@ -277,15 +389,30 @@
             <point key="canvasLocation" x="-218" y="-143"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="logo.jpg" width="161" height="83"/>
+    </resources>
     <classes>
-        <class className="LmsClientClassViewController" superclassName="UICollectionViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientClassViewController.h"/>
+        <class className="LmsClientChapterOverviewViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientChapterOverviewViewController.h"/>
             <relationships>
-                <relationship kind="outlet" name="sayHello" candidateClass="UINavigationItem"/>
+                <relationship kind="outlet" name="overviewOut" candidateClass="UITextView"/>
             </relationships>
         </class>
-        <class className="LmsClientCourseViewController" superclassName="UICollectionViewController">
+        <class className="LmsClientClassMasterViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientClassMasterViewController.h"/>
+        </class>
+        <class className="LmsClientClassViewController" superclassName="UICollectionViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientClassViewController.h"/>
+        </class>
+        <class className="LmsClientCourseMasterViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientCourseMasterViewController.h"/>
+        </class>
+        <class className="LmsClientCourseViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientCourseViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="debug" candidateClass="UITextView"/>
+            </relationships>
         </class>
         <class className="LmsClientErrorViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientErrorViewController.h"/>
@@ -324,4 +451,7 @@
         <simulatedOrientationMetrics key="orientation"/>
         <simulatedScreenMetrics key="destination"/>
     </simulatedMetricsContainer>
+    <inferredMetricsTieBreakers>
+        <segue reference="YDD-AY-kx4"/>
+    </inferredMetricsTieBreakers>
 </document>

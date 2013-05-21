@@ -12,6 +12,5 @@
 
 @property (nonatomic,strong) NSDictionary *data;
 
-@property (weak, nonatomic) IBOutlet UINavigationItem *sayHello;
 
 @end

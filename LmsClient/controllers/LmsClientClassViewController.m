@@ -21,7 +21,6 @@
 @implementation LmsClientClassViewController
 
 @synthesize data=_data;
-@synthesize sayHello=_sayHello;
 @synthesize cvm=_cvm;
 @synthesize errMsg=_errMsg;
 @synthesize dataToPass=_dataToPass;
@@ -107,6 +106,7 @@
          else{
              self.dataToPass = dic;
              [self performSegueWithIdentifier:@"course" sender:self];
+             [self performSegueWithIdentifier:@"courseMaster" sender:self];
          }
      }
                    onFailureCall:
@@ -125,7 +125,7 @@
         [segue.destinationViewController performSelector:@selector(errorMsgToDisplay:)
                                               withObject:self.errMsg];
 
-    }else if([[segue identifier] isEqualToString:@"course"]){
+    }else if([[segue identifier] isEqualToString:@"course"] || [[segue identifier] isEqualToString:@"courseMaster"] ){
         [segue.destinationViewController performSelector:@selector(setData:)
                                               withObject:self.dataToPass];
         

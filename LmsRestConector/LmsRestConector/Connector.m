@@ -81,7 +81,7 @@
     
     NSMutableURLRequest * getRequest=[NSMutableURLRequest requestWithURL:[NSURL URLWithString: url]
                                                         cachePolicy:NSURLRequestUseProtocolCachePolicy
-                                                         timeoutInterval:60.0];
+                                                         timeoutInterval:20.0];
     
     [getRequest addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     
