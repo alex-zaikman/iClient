@@ -9,6 +9,8 @@
 #import "LmsClientClassViewController.h"
 #import "LmsClientUICollectionCell.h"
 #import "CourseViewModel.h"
+#import "LmsClientCourseMasterViewController.h"
+#import "LmsClientCourseViewController.h"
 
 @interface LmsClientClassViewController()
 
@@ -105,7 +107,7 @@
                 [self performSegueWithIdentifier:@"nocourse" sender:self];
          else{
              self.dataToPass = dic;
-             [self performSegueWithIdentifier:@"course" sender:self];
+             [self performSegueWithIdentifier:@"courseDetail" sender:self];
              [self performSegueWithIdentifier:@"courseMaster" sender:self];
          }
      }
@@ -125,7 +127,11 @@
         [segue.destinationViewController performSelector:@selector(errorMsgToDisplay:)
                                               withObject:self.errMsg];
 
-    }else if([[segue identifier] isEqualToString:@"course"] || [[segue identifier] isEqualToString:@"courseMaster"] ){
+    }else if([[segue identifier] isEqualToString:@"courseDetail"] ){
+        [segue.destinationViewController performSelector:@selector(setData:)
+                                              withObject:self.dataToPass];
+        
+    }else if( [[segue identifier] isEqualToString:@"courseMaster"] ){
         [segue.destinationViewController performSelector:@selector(setData:)
                                               withObject:self.dataToPass];
         

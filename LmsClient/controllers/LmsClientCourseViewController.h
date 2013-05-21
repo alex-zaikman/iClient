@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LmsClientCourseViewController : UIViewController
+@interface LmsClientCourseViewController : UITableViewController
 
 @property (nonatomic,strong) NSDictionary *data;
 

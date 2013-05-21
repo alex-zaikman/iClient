@@ -8,11 +8,11 @@
          ignoreCount = "0"
          continueAfterRunningActions = "No"
          filePath = "LmsClient/controllers/LmsClientClassViewController.m"
-         timestampString = "390838023.889945"
+         timestampString = "390856265.10897"
          startingColumnNumber = "9223372036854775807"
          endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "124"
-         endingLineNumber = "124"
+         startingLineNumber = "126"
+         endingLineNumber = "126"
          landmarkName = "-prepareForSegue:sender:"
          landmarkType = "5">
       </FileBreakpoint>
@@ -51,32 +51,6 @@
          startingLineNumber = "22"
          endingLineNumber = "22"
          landmarkName = "-errorMsgToDisplay:"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "LmsClient/controllers/LmsClientCourseViewController.m"
-         timestampString = "390835691.156901"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "26"
-         endingLineNumber = "26"
-         landmarkName = "-viewDidLoad"
-         landmarkType = "5">
-      </FileBreakpoint>
-      <FileBreakpoint
-         shouldBeEnabled = "No"
-         ignoreCount = "0"
-         continueAfterRunningActions = "No"
-         filePath = "LmsClient/controllers/LmsClientCourseViewController.m"
-         timestampString = "390834681.449181"
-         startingColumnNumber = "9223372036854775807"
-         endingColumnNumber = "9223372036854775807"
-         startingLineNumber = "23"
-         endingLineNumber = "23"
-         landmarkName = "-viewDidLoad"
          landmarkType = "5">
       </FileBreakpoint>
       <FileBreakpoint
@@ -155,6 +129,71 @@
          startingLineNumber = "30"
          endingLineNumber = "30"
          landmarkName = "-setOverviewText:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "LmsClient/controllers/LmsClientClassViewController.m"
+         timestampString = "390856265.10897"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "131"
+         endingLineNumber = "131"
+         landmarkName = "-prepareForSegue:sender:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "LmsClient/controllers/LmsClientClassViewController.m"
+         timestampString = "390856265.10897"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "136"
+         endingLineNumber = "136"
+         landmarkName = "-prepareForSegue:sender:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "LmsClient/controllers/LmsClientClassViewController.m"
+         timestampString = "390856265.10897"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "135"
+         endingLineNumber = "135"
+         landmarkName = "-prepareForSegue:sender:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "LmsClient/controllers/LmsClientCourseViewController.m"
+         timestampString = "390858772.069801"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "56"
+         endingLineNumber = "56"
+         landmarkName = "-tableView:cellForRowAtIndexPath:"
+         landmarkType = "5">
+      </FileBreakpoint>
+      <FileBreakpoint
+         shouldBeEnabled = "No"
+         ignoreCount = "0"
+         continueAfterRunningActions = "No"
+         filePath = "LmsClient/controllers/LmsClientCourseViewController.m"
+         timestampString = "390859992.818075"
+         startingColumnNumber = "9223372036854775807"
+         endingColumnNumber = "9223372036854775807"
+         startingLineNumber = "87"
+         endingLineNumber = "87"
+         landmarkName = "-tableView:didSelectRowAtIndexPath:"
          landmarkType = "5">
       </FileBreakpoint>
    </FileBreakpoints>

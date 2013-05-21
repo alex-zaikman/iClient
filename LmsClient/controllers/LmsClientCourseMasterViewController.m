@@ -32,8 +32,10 @@
     return [chapters count];
 }
 
+
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
+    
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
@@ -45,12 +47,13 @@
     
     NSString *title = [chapter valueForKey:@"title"];
     
-
+    
     cell.textLabel.text = title;
     cell.tag = index;
     
     
     return cell;
+    
 }
 
 /*
