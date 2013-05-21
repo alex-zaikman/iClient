@@ -80,8 +80,16 @@
  */
 + (void) lmsGetCourseLessonFrom:(NSString*)domain courseId:(NSNumber*)courseid lessonCid:(NSNumber*)lessonCid  callBackTarget:(id<CalableLmsClient>)target;
 
+/*
+ *Get classes associated to user
+ */
++ (void) lmsAssociateCourseToUserFrom:(NSString*)domain toUserId:(NSNumber*)userid associated:(BOOL)associated  callBackTarget:(id<CalableLmsClient>)target;
 
-
++ (void) lmsAssociateCourseToUserFrom:(NSString*)domain toUserId:(NSNumber*)userid   callBackTarget:(id<CalableLmsClient>)target;
+/*
+ *  Get Course - Returns the full Course manifest associated to the user. 
+ */
++ (void) lmsCourseDataFrom:(NSString*)domain withId:(NSString*)courseid   callBackTarget:(id<CalableLmsClient>)target;
 
 
 //TODO add the rest of the rest api...

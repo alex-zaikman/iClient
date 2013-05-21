@@ -17,6 +17,17 @@
 		018BD074174A30160050CF8F /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 018BD073174A30160050CF8F /* Settings.bundle */; };
 		018BD07C174A6A370050CF8F /* LmsClientCourseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018BD07B174A6A370050CF8F /* LmsClientCourseViewController.m */; };
 		018BD087174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018BD086174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m */; };
+		018BD094174A74980050CF8F /* Icon_144x144_v1.png in Resources */ = {isa = PBXBuildFile; fileRef = 018BD093174A74980050CF8F /* Icon_144x144_v1.png */; };
+		018BD096174A74DD0050CF8F /* Icon_72x72_v1.png in Resources */ = {isa = PBXBuildFile; fileRef = 018BD095174A74DD0050CF8F /* Icon_72x72_v1.png */; };
+		018BD099174B476F0050CF8F /* login_landscape.png in Resources */ = {isa = PBXBuildFile; fileRef = 018BD097174B476F0050CF8F /* login_landscape.png */; };
+		018BD09A174B476F0050CF8F /* login_portrait.png in Resources */ = {isa = PBXBuildFile; fileRef = 018BD098174B476F0050CF8F /* login_portrait.png */; };
+		018BD09C174B478E0050CF8F /* Default-Landscape~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 018BD09B174B478E0050CF8F /* Default-Landscape~ipad.png */; };
+		018BD09E174B47970050CF8F /* Default-Portrait~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 018BD09D174B47960050CF8F /* Default-Portrait~ipad.png */; };
+		018BD0A0174B479F0050CF8F /* Default-Portrait@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 018BD09F174B479E0050CF8F /* Default-Portrait@2x~ipad.png */; };
+		018BD0A2174B47A60050CF8F /* Default-Landscape@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = 018BD0A1174B47A60050CF8F /* Default-Landscape@2x~ipad.png */; };
+		018BD0A4174B70DE0050CF8F /* CourseViewModel.h in Resources */ = {isa = PBXBuildFile; fileRef = 018BD0A3174B70DE0050CF8F /* CourseViewModel.h */; };
+		018BD0A8174B7D170050CF8F /* LmsClientErrorViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018BD0A7174B7D170050CF8F /* LmsClientErrorViewController.m */; };
+		018BD0AB174B82E30050CF8F /* LmsClientCourseSplitViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 018BD0AA174B82E30050CF8F /* LmsClientCourseSplitViewController.m */; };
 		01C3BE341740F44900C75915 /* LmsConnectionLogIn.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE331740F44900C75915 /* LmsConnectionLogIn.h */; };
 		01C3BE391740F5C900C75915 /* CalableLmsClient.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE381740F5C900C75915 /* CalableLmsClient.h */; };
 		01C3BE41174107FC00C75915 /* LmsConnectionRestApi.h in Resources */ = {isa = PBXBuildFile; fileRef = 01C3BE40174107FC00C75915 /* LmsConnectionRestApi.h */; };
@@ -58,6 +69,19 @@
 		018BD07B174A6A370050CF8F /* LmsClientCourseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientCourseViewController.m; sourceTree = "<group>"; };
 		018BD085174A6DFA0050CF8F /* LmsClientCourseMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientCourseMasterViewController.h; sourceTree = "<group>"; };
 		018BD086174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientCourseMasterViewController.m; sourceTree = "<group>"; };
+		018BD093174A74980050CF8F /* Icon_144x144_v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_144x144_v1.png; sourceTree = "<group>"; };
+		018BD095174A74DD0050CF8F /* Icon_72x72_v1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon_72x72_v1.png; sourceTree = "<group>"; };
+		018BD097174B476F0050CF8F /* login_landscape.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_landscape.png; sourceTree = "<group>"; };
+		018BD098174B476F0050CF8F /* login_portrait.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login_portrait.png; sourceTree = "<group>"; };
+		018BD09B174B478E0050CF8F /* Default-Landscape~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape~ipad.png"; path = "../../Default-Landscape~ipad.png"; sourceTree = "<group>"; };
+		018BD09D174B47960050CF8F /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
+		018BD09F174B479E0050CF8F /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
+		018BD0A1174B47A60050CF8F /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
+		018BD0A3174B70DE0050CF8F /* CourseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = CourseViewModel.h; path = ../../LmsRestConector/LmsRestConector/CourseViewModel.h; sourceTree = "<group>"; };
+		018BD0A6174B7D170050CF8F /* LmsClientErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientErrorViewController.h; sourceTree = "<group>"; };
+		018BD0A7174B7D170050CF8F /* LmsClientErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientErrorViewController.m; sourceTree = "<group>"; };
+		018BD0A9174B82E30050CF8F /* LmsClientCourseSplitViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientCourseSplitViewController.h; sourceTree = "<group>"; };
+		018BD0AA174B82E30050CF8F /* LmsClientCourseSplitViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientCourseSplitViewController.m; sourceTree = "<group>"; };
 		01C3BE331740F44900C75915 /* LmsConnectionLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LmsConnectionLogIn.h; path = ../../LmsRestConector/LmsRestConector/LmsConnectionLogIn.h; sourceTree = "<group>"; };
 		01C3BE381740F5C900C75915 /* CalableLmsClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = CalableLmsClient.h; path = ../LmsRestConector/LmsRestConector/CalableLmsClient.h; sourceTree = "<group>"; };
 		01C3BE40174107FC00C75915 /* LmsConnectionRestApi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = LmsConnectionRestApi.h; path = ../LmsRestConector/LmsRestConector/LmsConnectionRestApi.h; sourceTree = "<group>"; };
@@ -104,6 +128,7 @@
 				018BD081174A6B640050CF8F /* course */,
 				018BD080174A6B360050CF8F /* class */,
 				018BD07F174A6B250050CF8F /* login */,
+				018BD0A5174B7CCF0050CF8F /* error */,
 			);
 			name = ViewControllers;
 			path = LmsClient/controllers;
@@ -144,10 +169,13 @@
 		018BD081174A6B640050CF8F /* course */ = {
 			isa = PBXGroup;
 			children = (
+				018BD0A3174B70DE0050CF8F /* CourseViewModel.h */,
 				018BD07A174A6A370050CF8F /* LmsClientCourseViewController.h */,
 				018BD07B174A6A370050CF8F /* LmsClientCourseViewController.m */,
 				018BD085174A6DFA0050CF8F /* LmsClientCourseMasterViewController.h */,
 				018BD086174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m */,
+				018BD0A9174B82E30050CF8F /* LmsClientCourseSplitViewController.h */,
+				018BD0AA174B82E30050CF8F /* LmsClientCourseSplitViewController.m */,
 			);
 			name = course;
 			sourceTree = "<group>";
@@ -155,10 +183,27 @@
 		018BD082174A6BA70050CF8F /* t2k resources */ = {
 			isa = PBXGroup;
 			children = (
+				018BD0A1174B47A60050CF8F /* Default-Landscape@2x~ipad.png */,
+				018BD09F174B479E0050CF8F /* Default-Portrait@2x~ipad.png */,
+				018BD09D174B47960050CF8F /* Default-Portrait~ipad.png */,
+				018BD09B174B478E0050CF8F /* Default-Landscape~ipad.png */,
+				018BD097174B476F0050CF8F /* login_landscape.png */,
+				018BD098174B476F0050CF8F /* login_portrait.png */,
+				018BD095174A74DD0050CF8F /* Icon_72x72_v1.png */,
+				018BD093174A74980050CF8F /* Icon_144x144_v1.png */,
 				0134D3161748CC9100C50ED9 /* login.jpg */,
 			);
 			name = "t2k resources";
 			path = t2kResources;
+			sourceTree = "<group>";
+		};
+		018BD0A5174B7CCF0050CF8F /* error */ = {
+			isa = PBXGroup;
+			children = (
+				018BD0A6174B7D170050CF8F /* LmsClientErrorViewController.h */,
+				018BD0A7174B7D170050CF8F /* LmsClientErrorViewController.m */,
+			);
+			name = error;
 			sourceTree = "<group>";
 		};
 		01FDBAFC1740B5BF0078727B = {
@@ -290,6 +335,15 @@
 				0134D3171748CC9100C50ED9 /* login.jpg in Resources */,
 				018BD06A1748F1EE0050CF8F /* HomeViewModel.h in Resources */,
 				018BD074174A30160050CF8F /* Settings.bundle in Resources */,
+				018BD094174A74980050CF8F /* Icon_144x144_v1.png in Resources */,
+				018BD096174A74DD0050CF8F /* Icon_72x72_v1.png in Resources */,
+				018BD099174B476F0050CF8F /* login_landscape.png in Resources */,
+				018BD09A174B476F0050CF8F /* login_portrait.png in Resources */,
+				018BD09C174B478E0050CF8F /* Default-Landscape~ipad.png in Resources */,
+				018BD09E174B47970050CF8F /* Default-Portrait~ipad.png in Resources */,
+				018BD0A0174B479F0050CF8F /* Default-Portrait@2x~ipad.png in Resources */,
+				018BD0A2174B47A60050CF8F /* Default-Landscape@2x~ipad.png in Resources */,
+				018BD0A4174B70DE0050CF8F /* CourseViewModel.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -307,6 +361,8 @@
 				018BD072174A12590050CF8F /* LmsClientUICollectionCell.m in Sources */,
 				018BD07C174A6A370050CF8F /* LmsClientCourseViewController.m in Sources */,
 				018BD087174A6DFA0050CF8F /* LmsClientCourseMasterViewController.m in Sources */,
+				018BD0A8174B7D170050CF8F /* LmsClientErrorViewController.m in Sources */,
+				018BD0AB174B82E30050CF8F /* LmsClientCourseSplitViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

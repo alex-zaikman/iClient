@@ -8,11 +8,25 @@
 
 #import "LmsClientClassViewController.h"
 #import "LmsClientUICollectionCell.h"
+#import "CourseViewModel.h"
+
+@interface LmsClientClassViewController()
+
+@property (nonatomic,strong) CourseViewModel *cvm;
+@property (nonatomic,strong) NSError *errMsg;
+@property (nonatomic,strong) NSDictionary *dataToPass;
+
+@end
 
 @implementation LmsClientClassViewController
 
 @synthesize data=_data;
 @synthesize sayHello=_sayHello;
+@synthesize cvm=_cvm;
+@synthesize errMsg=_errMsg;
+@synthesize dataToPass=_dataToPass;
+
+
 
 -(void)viewDidLoad{
     [self.collectionView registerClass:[LmsClientUICollectionCell class] forCellWithReuseIdentifier:@"cell"];
@@ -52,7 +66,13 @@
 
     cell.lable.text = className;
     
-    cell.tag = (NSInteger)[(NSDictionary*)[(NSArray*)[self.data valueForKey:@"classes"] objectAtIndex:indexPath.item] valueForKey:@"classId"];
+    NSArray *classes = (NSArray*)[self.data valueForKey:@"classes"];
+    NSUInteger index =  [indexPath indexAtPosition:[indexPath length]-1];
+    NSDictionary *class = [classes objectAtIndex:index];
+    NSNumber *cid = [class valueForKey:@"classId"];
+    
+    
+    cell.tag =[cid integerValue] ;
     
     return cell;
 }
@@ -61,10 +81,55 @@
 #pragma mark - UICollectionViewDelegate
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath
 {
+    
+    UICollectionViewCell *currentCell = [collectionView cellForItemAtIndexPath:indexPath];
+    
+    self.cvm = [[CourseViewModel alloc]init];
+    
+    NSDictionary * usr= [self.data valueForKey:@"user"];
+    
+    
+    NSNumber *cid = [[NSNumber alloc] initWithInt: currentCell.tag];
+    NSNumber *uid =[usr valueForKey:@"userId" ];
+    NSString *dom = [[NSUserDefaults standardUserDefaults] stringForKey:@"domain_preference"];
+    
+    
+    
+
+    
+    [self.cvm getDataQueryDomain:dom
+                    curentUserId:uid
+                     forClassId:cid
+                    OnSuccessCall:
+     ^(NSDictionary *dic ){
+         if(dic == nil)
+                [self performSegueWithIdentifier:@"nocourse" sender:self];
+         else{
+             self.dataToPass = dic;
+             [self performSegueWithIdentifier:@"course" sender:self];
+         }
+     }
+                   onFailureCall:
+     ^(NSError *e){
+         self.errMsg = e;
+         [self performSegueWithIdentifier:@"error" sender:self];
+          }
+     ];
+    
     // TODO: Select Item
 }
-//- (void)collectionView:(UICollectionView *)collectionView didDeselectItemAtIndexPath:(NSIndexPath *)indexPath {
-//    // TODO: Deselect item
-//}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    
+    if([[segue identifier] isEqualToString:@"error"]){
+        [segue.destinationViewController performSelector:@selector(errorMsg:)
+                                              withObject:self.errMsg];
+
+    }else if([[segue identifier] isEqualToString:@"course"]){
+        [segue.destinationViewController performSelector:@selector(setData:)
+                                              withObject:self.dataToPass];
+        
+    }
+}
 
 @end

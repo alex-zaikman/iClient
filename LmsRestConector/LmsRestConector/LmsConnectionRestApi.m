@@ -177,12 +177,54 @@ static Connector* connection;
     [url appendString:domain];
     [url appendString:@"/lms/rest/userlibrary/courses/"];
     [url appendString:[courseid stringValue]];
-    [url appendString:@"lessons/"];
+    [url appendString:@"/lessons/"];
     [url appendString:[lessonCid stringValue]];
     
     [connection sendGetTo:url withVariable:nil callBack:target];
 }
 
+
++ (void) lmsAssociateCourseToUserFrom:(NSString*)domain toUserId:(NSNumber*)userid   callBackTarget:(id<CalableLmsClient>)target{
+    
+    NSMutableString *url = [[NSMutableString alloc]init];
+    
+    [url appendString:domain];
+    [url appendString:@"/lms/rest/users/"];
+    [url appendString:[userid stringValue]];
+    [url appendString:@"/studyclassstates"];
+
+    [connection sendGetTo:url withVariable:nil callBack:target];
+    
+}
+
+
++ (void) lmsAssociateCourseToUserFrom:(NSString*)domain toUserId:(NSNumber*)userid associated:(BOOL)associated  callBackTarget:(id<CalableLmsClient>)target{
+    
+    NSMutableString *url = [[NSMutableString alloc]init];
+    
+    [url appendString:domain];
+    [url appendString:@"/lms/rest/users/"];
+    [url appendString:[userid stringValue]];
+    [url appendString:@"/studyclassstates"];
+    
+    NSDictionary* vars =  [[NSDictionary alloc]initWithObjectsAndKeys:@"associated", associated?@"true":@"false" ,@"associated" , nil];
+    
+    [connection sendGetTo:url withVariable:vars callBack:target];
+    
+}
+
+
++ (void) lmsCourseDataFrom:(NSString*)domain withId:(NSString*)courseid   callBackTarget:(id<CalableLmsClient>)target{
+        
+    NSMutableString *url = [[NSMutableString alloc]init];
+    
+    [url appendString:domain];
+    [url appendString:@"/lms/rest/userlibrary/courses/"];
+    [url appendString:courseid];
+    
+    [connection sendGetTo:url withVariable:nil callBack:target];
+    
+}
 
 
 

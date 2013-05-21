@@ -10,4 +10,6 @@
 
 @interface LmsClientCourseViewController : UICollectionViewController
 
+@property (nonatomic,strong) NSDictionary *data;
+
 @end

@@ -14,6 +14,7 @@
 
 @implementation LmsClientCourseViewController
 
+@synthesize data=_data;
 
 
 @end

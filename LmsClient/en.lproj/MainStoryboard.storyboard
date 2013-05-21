@@ -4,6 +4,47 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
     </dependencies>
     <scenes>
+        <!--Lms Client Error View Controller-->
+        <scene sceneID="McJ-6A-Zl6">
+            <objects>
+                <viewController id="4ll-C1-M9O" customClass="LmsClientErrorViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bRj-Pm-Yms">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Error report:" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="IJZ-Ia-Z9p">
+                                <rect key="frame" x="58" y="61" width="92" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <navigationBar contentMode="scaleToFill" id="wYJ-Bj-q2V">
+                                <rect key="frame" x="0.0" y="1" width="768" height="44"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <items>
+                                    <navigationItem title="Error" id="rnU-kV-Nhf"/>
+                                </items>
+                            </navigationBar>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" text="error ...." id="Yz7-Rb-25h">
+                                <rect key="frame" x="49" y="90" width="671" height="860"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="YOm-Wv-1tf"/>
+                    <connections>
+                        <outlet property="errorMsg" destination="Yz7-Rb-25h" id="EHG-Tw-KIF"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Xar-Qc-mvX" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="766" y="-2189"/>
+        </scene>
         <!--Lms Client Class View Controller-->
         <scene sceneID="EfJ-4B-vCd">
             <objects>
@@ -38,6 +79,8 @@
                         <outlet property="sayHello" destination="wFo-Oe-HnZ" id="qyK-ej-qQP"/>
                         <outlet property="view" destination="bUQ-wD-hDU" id="Y0U-JU-VOa"/>
                         <segue destination="Mbl-MN-iLR" kind="push" identifier="course" id="Hcr-HY-DDe"/>
+                        <segue destination="gf6-sr-yva" kind="push" identifier="nocourse" id="Kqs-9H-H6j"/>
+                        <segue destination="4ll-C1-M9O" kind="push" identifier="error" id="xba-8c-b4j"/>
                     </connections>
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ara-Em-4id" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -60,9 +103,9 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="xKC-XM-RPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3534" y="344"/>
+            <point key="canvasLocation" x="3478" y="3184"/>
         </scene>
-        <!--Lms Client Course Master View Controller - Root View Controller-->
+        <!--Lms Client Course Master View Controller - Course-->
         <scene sceneID="DTW-Ei-WNW">
             <objects>
                 <tableViewController clearsSelectionOnViewWillAppear="NO" id="Kr0-37-0cZ" customClass="LmsClientCourseMasterViewController" sceneMemberID="viewController">
@@ -86,7 +129,7 @@
                             <outlet property="delegate" destination="Kr0-37-0cZ" id="XAC-bK-7oq"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="Root View Controller" id="Re5-O2-tEm"/>
+                    <navigationItem key="navigationItem" title="Course" id="Re5-O2-tEm"/>
                     <connections>
                         <outlet property="view" destination="L13-fZ-NPK" id="jCU-zH-nOA"/>
                     </connections>
@@ -110,10 +153,10 @@
             </objects>
             <point key="canvasLocation" x="3534" y="-596"/>
         </scene>
-        <!--Split View Controller-->
+        <!--Lms Client Course Split View Controller-->
         <scene sceneID="pJU-85-Qmx">
             <objects>
-                <splitViewController id="Mbl-MN-iLR" sceneMemberID="viewController">
+                <splitViewController storyboardIdentifier="splitview" id="Mbl-MN-iLR" customClass="LmsClientCourseSplitViewController" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationItem key="navigationItem" id="d7N-6K-aN4"/>
                     <connections>
@@ -179,20 +222,21 @@
                                 <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                             </textField>
                             <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" minimumFontSize="17" id="uOg-VC-dQQ">
-                                <rect key="frame" x="21" y="212" width="279" height="30"/>
+                                <rect key="frame" x="20" y="212" width="728" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" image="login.jpg" id="8NP-40-1Lj">
-                                <rect key="frame" x="21" y="260" width="732" height="680"/>
-                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                            </imageView>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" style="gray" id="y1b-sD-vi6">
+                                <rect key="frame" x="199" y="440" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" red="0.9325087221562488" green="1" blue="0.80695978040068761" alpha="1" colorSpace="calibratedRGB"/>
                     </view>
                     <navigationItem key="navigationItem" title="Log In" id="G4h-bX-ysh"/>
                     <connections>
+                        <outlet property="loading" destination="y1b-sD-vi6" id="cq7-3U-vIY"/>
                         <outlet property="output" destination="uOg-VC-dQQ" id="BTi-dX-cBX"/>
                         <outlet property="pass" destination="PLn-0u-ikv" id="KOb-e5-Q94"/>
                         <outlet property="user" destination="QMZ-gi-5BA" id="32k-tg-16B"/>
@@ -202,7 +246,31 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Twp-fg-fF7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-275" y="-238"/>
+            <point key="canvasLocation" x="-295" y="-242"/>
+        </scene>
+        <!--View Controller - Course-->
+        <scene sceneID="ytM-5p-jKN">
+            <objects>
+                <viewController id="gf6-sr-yva" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="vqR-yB-hul">
+                        <rect key="frame" x="0.0" y="64" width="768" height="960"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="There is no coures assigend to this class." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="nTj-gz-ctc">
+                                <rect key="frame" x="45" y="40" width="435" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Course" id="bv1-QC-iWd"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="moe-Sy-Sbu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2518" y="1343"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="1Ix-TY-GwO">
@@ -224,9 +292,6 @@
             <point key="canvasLocation" x="-1509" y="-302"/>
         </scene>
     </scenes>
-    <resources>
-        <image name="login.jpg" width="1280" height="800"/>
-    </resources>
     <classes>
         <class className="LmsClientClassViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientClassViewController.h"/>
@@ -237,12 +302,22 @@
         <class className="LmsClientCourseMasterViewController" superclassName="UITableViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientCourseMasterViewController.h"/>
         </class>
+        <class className="LmsClientCourseSplitViewController" superclassName="UISplitViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientCourseSplitViewController.h"/>
+        </class>
         <class className="LmsClientCourseViewController" superclassName="UICollectionViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientCourseViewController.h"/>
+        </class>
+        <class className="LmsClientErrorViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientErrorViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="errorMsg" candidateClass="UITextView"/>
+            </relationships>
         </class>
         <class className="LmsClientLogInViewController" superclassName="UIViewController">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/LmsClientLogInViewController.h"/>
             <relationships>
+                <relationship kind="outlet" name="loading" candidateClass="UIActivityIndicatorView"/>
                 <relationship kind="outlet" name="output" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="pass" candidateClass="UITextField"/>
                 <relationship kind="outlet" name="user" candidateClass="UITextField"/>
@@ -263,9 +338,6 @@
         </class>
         <class className="UICollectionViewFlowLayout" superclassName="UICollectionViewLayout">
             <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewFlowLayout.h"/>
-        </class>
-        <class className="UICollectionViewLayout" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/UICollectionViewLayout.h"/>
         </class>
     </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
