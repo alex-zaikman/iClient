@@ -122,7 +122,7 @@
 -(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
     
     if([[segue identifier] isEqualToString:@"error"]){
-        [segue.destinationViewController performSelector:@selector(errorMsg:)
+        [segue.destinationViewController performSelector:@selector(errorMsgToDisplay:)
                                               withObject:self.errMsg];
 
     }else if([[segue identifier] isEqualToString:@"course"]){
