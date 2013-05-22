@@ -77,14 +77,7 @@ void (^fnfaliure)(NSError *);
         
         [user setValue:[[[dic valueForKey:@"user"] valueForKey:@"role"]objectAtIndex:0 ]forKey:@"role"];
         
-        [user setValue:[dic valueForKey:@"logoutUrl"] forKey:@"logoutURL"];  
-
-        
-        
-        
-        NSString *tmp = [dic valueForKey:@"logoutUrl"];
-        
-                
+        [user setValue:[dic valueForKey:@"logoutUrl"] forKey:@"logoutURL"];          
         
         
         [self.data setValue:user forKeyPath:@"user"];

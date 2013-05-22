@@ -208,24 +208,6 @@
             </objects>
             <point key="canvasLocation" x="1722" y="-931"/>
         </scene>
-        <!--Lms Client Course View Controller-->
-        <scene sceneID="MQo-tm-xw2">
-            <objects>
-                <viewController id="txd-lZ-ZM4" customClass="LmsClientCourseViewController" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="p0Y-Gq-oTB">
-                        <rect key="frame" x="0.0" y="20" width="768" height="1004"/>
-                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <toolbarItems/>
-                    <connections>
-                        <outlet property="view" destination="p0Y-Gq-oTB" id="hgZ-kJ-wd3"/>
-                    </connections>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="xKC-XM-RPm" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3478" y="3184"/>
-        </scene>
         <!--Lms Client Class Master View Controller - Welcome-->
         <scene sceneID="Lik-fn-GY0">
             <objects>
@@ -253,7 +235,6 @@
         <!--Navigation Controller-->
         <scene sceneID="fks-XH-1zH">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="XOn-CY-zjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <navigationController id="SCb-iI-NHZ" sceneMemberID="viewController">
                     <navigationBar key="navigationBar" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" id="ZeN-2k-rse">
                         <autoresizingMask key="autoresizingMask"/>
@@ -262,6 +243,7 @@
                         <segue destination="rn3-D3-O6P" kind="relationship" relationship="rootViewController" id="e65-Kd-IIT"/>
                     </connections>
                 </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XOn-CY-zjh" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-434" y="-1399"/>
         </scene>

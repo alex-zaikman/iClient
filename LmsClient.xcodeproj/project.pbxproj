@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		012B52611742459E007AADBD /* libLmsRestConector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 017C5BBF1740F3F300245713 /* libLmsRestConector.a */; };
 		0134D3171748CC9100C50ED9 /* login.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 0134D3161748CC9100C50ED9 /* login.jpg */; };
 		0134D31C1748CE5C00C50ED9 /* LmsClientAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 0134D31B1748CE5C00C50ED9 /* LmsClientAppDelegate.m */; };
 		0134D31F1748D05600C50ED9 /* LmsClientLogInViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0134D31E1748D05600C50ED9 /* LmsClientLogInViewController.m */; };
@@ -42,6 +41,7 @@
 		01FDBB1D1740B5BF0078727B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB1C1740B5BF0078727B /* Default@2x.png */; };
 		01FDBB1F1740B5BF0078727B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB1E1740B5BF0078727B /* Default-568h@2x.png */; };
 		01FDBB221740B5BF0078727B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB201740B5BF0078727B /* MainStoryboard.storyboard */; };
+		74826063174CFBEA00D3E35B /* libLmsRestConector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 017C5BBF1740F3F300245713 /* libLmsRestConector.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,7 +79,7 @@
 		018BD09D174B47960050CF8F /* Default-Portrait~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait~ipad.png"; path = "../../Default-Portrait~ipad.png"; sourceTree = "<group>"; };
 		018BD09F174B479E0050CF8F /* Default-Portrait@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Portrait@2x~ipad.png"; path = "../../Default-Portrait@2x~ipad.png"; sourceTree = "<group>"; };
 		018BD0A1174B47A60050CF8F /* Default-Landscape@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-Landscape@2x~ipad.png"; path = "../../Default-Landscape@2x~ipad.png"; sourceTree = "<group>"; };
-		018BD0A3174B70DE0050CF8F /* CourseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = CourseViewModel.h; path = ../../LmsRestConector/LmsRestConector/CourseViewModel.h; sourceTree = "<group>"; };
+		018BD0A3174B70DE0050CF8F /* CourseViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CourseViewModel.h; path = ../../LmsRestConector/LmsRestConector/CourseViewModel.h; sourceTree = "<group>"; };
 		018BD0A6174B7D170050CF8F /* LmsClientErrorViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientErrorViewController.h; sourceTree = "<group>"; };
 		018BD0A7174B7D170050CF8F /* LmsClientErrorViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientErrorViewController.m; sourceTree = "<group>"; };
 		018BD0AC174B9AD20050CF8F /* logo.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = logo.jpg; sourceTree = "<group>"; };
@@ -109,7 +109,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				012B52611742459E007AADBD /* libLmsRestConector.a in Frameworks */,
+				74826063174CFBEA00D3E35B /* libLmsRestConector.a in Frameworks */,
 				01FDBB091740B5BF0078727B /* UIKit.framework in Frameworks */,
 				01FDBB0B1740B5BF0078727B /* Foundation.framework in Frameworks */,
 				01FDBB0D1740B5BF0078727B /* CoreGraphics.framework in Frameworks */,
@@ -471,11 +471,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LmsClient/LmsClient-Prefix.pch";
 				INFOPLIST_FILE = "LmsClient/LmsClient-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LmsRestConector-endqazzsgrqquqgetploipxtrafi/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/LmsRestConector-bfbekqgcaadideakznqktlwjqtmt/Build/Products/Debug-iphoneos\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -487,11 +482,6 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LmsClient/LmsClient-Prefix.pch";
 				INFOPLIST_FILE = "LmsClient/LmsClient-Info.plist";
-				LIBRARY_SEARCH_PATHS = (
-					"$(inherited)",
-					"\"$(SRCROOT)/../../../Library/Developer/Xcode/DerivedData/LmsRestConector-endqazzsgrqquqgetploipxtrafi/Build/Products/Debug-iphoneos\"",
-					"\"$(SRCROOT)/../../../../Library/Developer/Xcode/DerivedData/LmsRestConector-bfbekqgcaadideakznqktlwjqtmt/Build/Products/Debug-iphoneos\"",
-				);
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
