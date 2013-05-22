@@ -42,6 +42,8 @@
 		01FDBB1F1740B5BF0078727B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB1E1740B5BF0078727B /* Default-568h@2x.png */; };
 		01FDBB221740B5BF0078727B /* MainStoryboard.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 01FDBB201740B5BF0078727B /* MainStoryboard.storyboard */; };
 		74826063174CFBEA00D3E35B /* libLmsRestConector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 017C5BBF1740F3F300245713 /* libLmsRestConector.a */; };
+		74826067174D046000D3E35B /* LmsClientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74826066174D046000D3E35B /* LmsClientTableViewCell.m */; };
+		7482606A174D04E900D3E35B /* LmsClientLessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74826069174D04E900D3E35B /* LmsClientLessonViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,6 +104,10 @@
 		01FDBB1C1740B5BF0078727B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		01FDBB1E1740B5BF0078727B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
 		01FDBB211740B5BF0078727B /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard.storyboard; sourceTree = "<group>"; };
+		74826065174D046000D3E35B /* LmsClientTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientTableViewCell.h; sourceTree = "<group>"; };
+		74826066174D046000D3E35B /* LmsClientTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientTableViewCell.m; sourceTree = "<group>"; };
+		74826068174D04E900D3E35B /* LmsClientLessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientLessonViewController.h; sourceTree = "<group>"; };
+		74826069174D04E900D3E35B /* LmsClientLessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientLessonViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -130,6 +136,7 @@
 		018BD078174A67630050CF8F /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				74826064174D043700D3E35B /* Lesson overviw */,
 				018BD081174A6B640050CF8F /* course */,
 				018BD080174A6B360050CF8F /* class */,
 				018BD07F174A6B250050CF8F /* login */,
@@ -272,6 +279,17 @@
 			path = LmsClient;
 			sourceTree = "<group>";
 		};
+		74826064174D043700D3E35B /* Lesson overviw */ = {
+			isa = PBXGroup;
+			children = (
+				74826065174D046000D3E35B /* LmsClientTableViewCell.h */,
+				74826066174D046000D3E35B /* LmsClientTableViewCell.m */,
+				74826068174D04E900D3E35B /* LmsClientLessonViewController.h */,
+				74826069174D04E900D3E35B /* LmsClientLessonViewController.m */,
+			);
+			name = "Lesson overviw";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -381,6 +399,8 @@
 				018BD0A8174B7D170050CF8F /* LmsClientErrorViewController.m in Sources */,
 				018BD0B0174B9C600050CF8F /* LmsClientClassMasterViewController.m in Sources */,
 				018BD0B7174BBDBC0050CF8F /* LmsClientChapterOverviewViewController.m in Sources */,
+				74826067174D046000D3E35B /* LmsClientTableViewCell.m in Sources */,
+				7482606A174D04E900D3E35B /* LmsClientLessonViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -12,6 +12,7 @@
 
 @property (nonatomic,strong) NSString *dataToPass;
 
+
 @end
 
 
