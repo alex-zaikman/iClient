@@ -74,14 +74,14 @@
         bodyData = [bodyData stringByAppendingString:@"&"];
     }
     
-    if ( [bodyData length] > 0){
+    if ( [bodyData length] > 1){
         bodyData = [bodyData substringToIndex:[bodyData length] - 1];
         url = [url stringByAppendingString:bodyData];
     }
     
     NSMutableURLRequest * getRequest=[NSMutableURLRequest requestWithURL:[NSURL URLWithString: url]
                                                         cachePolicy:NSURLRequestUseProtocolCachePolicy
-                                                         timeoutInterval:20.0];
+                                                         timeoutInterval:90.0];
     
     [getRequest addValue:@"application/x-www-form-urlencoded" forHTTPHeaderField:@"Content-Type"];
     

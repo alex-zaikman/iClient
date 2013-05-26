@@ -14,6 +14,7 @@
 		01FDBB3D1740B60E0078727B /* Connector.h in CopyFiles */ = {isa = PBXBuildFile; fileRef = 01FDBB3C1740B60E0078727B /* Connector.h */; };
 		01FDBB3F1740B60E0078727B /* Connector.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FDBB3E1740B60E0078727B /* Connector.m */; };
 		01FDBB4A1740C6750078727B /* LmsConnectionLogIn.m in Sources */ = {isa = PBXBuildFile; fileRef = 01FDBB491740C6750078727B /* LmsConnectionLogIn.m */; };
+		74F4C5C1174E46BA009B7D88 /* LessonViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 74F4C5C0174E46BA009B7D88 /* LessonViewModel.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -44,6 +45,8 @@
 		01FDBB451740B6560078727B /* CalableLmsClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalableLmsClient.h; sourceTree = "<group>"; };
 		01FDBB481740C6740078727B /* LmsConnectionLogIn.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsConnectionLogIn.h; sourceTree = "<group>"; };
 		01FDBB491740C6750078727B /* LmsConnectionLogIn.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsConnectionLogIn.m; sourceTree = "<group>"; };
+		74F4C5BF174E46BA009B7D88 /* LessonViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LessonViewModel.h; sourceTree = "<group>"; };
+		74F4C5C0174E46BA009B7D88 /* LessonViewModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LessonViewModel.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +68,8 @@
 				0134D3141748AC6B00C50ED9 /* HomeViewModel.m */,
 				018BD088174A6E950050CF8F /* CourseViewModel.h */,
 				018BD089174A6E950050CF8F /* CourseViewModel.m */,
+				74F4C5BF174E46BA009B7D88 /* LessonViewModel.h */,
+				74F4C5C0174E46BA009B7D88 /* LessonViewModel.m */,
 			);
 			name = "View model";
 			sourceTree = "<group>";
@@ -182,6 +187,7 @@
 				01C3BE3F1741024900C75915 /* LmsConnectionRestApi.m in Sources */,
 				0134D3151748AC6B00C50ED9 /* HomeViewModel.m in Sources */,
 				018BD08A174A6E950050CF8F /* CourseViewModel.m in Sources */,
+				74F4C5C1174E46BA009B7D88 /* LessonViewModel.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

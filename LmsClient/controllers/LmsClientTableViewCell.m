@@ -19,7 +19,6 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
       
-        
          [self addSubview:self.img];
          [self addSubview:self.title];
         

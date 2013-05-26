@@ -17,6 +17,7 @@
 
 @synthesize data=_data;
 
+@synthesize dataToPass=_dataToPass;
 
 
 

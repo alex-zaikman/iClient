@@ -78,7 +78,7 @@
 /*
  * Returns the full course lesson. 
  */
-+ (void) lmsGetCourseLessonFrom:(NSString*)domain courseId:(NSNumber*)courseid lessonCid:(NSNumber*)lessonCid  callBackTarget:(id<CalableLmsClient>)target;
++ (void) lmsGetCourseLessonFrom:(NSString*)domain courseId:(NSString*)courseid lessonCid:(NSString*)lessonCid  callBackTarget:(id<CalableLmsClient>)target;
 
 /*
  *Get classes associated to user

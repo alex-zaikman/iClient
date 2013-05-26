@@ -44,6 +44,9 @@
 		74826063174CFBEA00D3E35B /* libLmsRestConector.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 017C5BBF1740F3F300245713 /* libLmsRestConector.a */; };
 		74826067174D046000D3E35B /* LmsClientTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 74826066174D046000D3E35B /* LmsClientTableViewCell.m */; };
 		7482606A174D04E900D3E35B /* LmsClientLessonViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 74826069174D04E900D3E35B /* LmsClientLessonViewController.m */; };
+		7482606D174DFC8200D3E35B /* LmsClientLessonOverviewWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7482606C174DFC8200D3E35B /* LmsClientLessonOverviewWebViewController.m */; };
+		74826070174E003C00D3E35B /* LmsClientLessonOverviewDescriptionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7482606F174E003C00D3E35B /* LmsClientLessonOverviewDescriptionViewController.m */; };
+		74F4C5C3174E46C8009B7D88 /* LessonViewModel.h in Resources */ = {isa = PBXBuildFile; fileRef = 74F4C5C2174E46C8009B7D88 /* LessonViewModel.h */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -108,6 +111,11 @@
 		74826066174D046000D3E35B /* LmsClientTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientTableViewCell.m; sourceTree = "<group>"; };
 		74826068174D04E900D3E35B /* LmsClientLessonViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientLessonViewController.h; sourceTree = "<group>"; };
 		74826069174D04E900D3E35B /* LmsClientLessonViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientLessonViewController.m; sourceTree = "<group>"; };
+		7482606B174DFC8200D3E35B /* LmsClientLessonOverviewWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientLessonOverviewWebViewController.h; sourceTree = "<group>"; };
+		7482606C174DFC8200D3E35B /* LmsClientLessonOverviewWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientLessonOverviewWebViewController.m; sourceTree = "<group>"; };
+		7482606E174E003C00D3E35B /* LmsClientLessonOverviewDescriptionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LmsClientLessonOverviewDescriptionViewController.h; sourceTree = "<group>"; };
+		7482606F174E003C00D3E35B /* LmsClientLessonOverviewDescriptionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LmsClientLessonOverviewDescriptionViewController.m; sourceTree = "<group>"; };
+		74F4C5C2174E46C8009B7D88 /* LessonViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file; name = LessonViewModel.h; path = ../../LmsRestConector/LmsRestConector/LessonViewModel.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -282,10 +290,15 @@
 		74826064174D043700D3E35B /* Lesson overviw */ = {
 			isa = PBXGroup;
 			children = (
+				74F4C5C2174E46C8009B7D88 /* LessonViewModel.h */,
 				74826065174D046000D3E35B /* LmsClientTableViewCell.h */,
 				74826066174D046000D3E35B /* LmsClientTableViewCell.m */,
 				74826068174D04E900D3E35B /* LmsClientLessonViewController.h */,
 				74826069174D04E900D3E35B /* LmsClientLessonViewController.m */,
+				7482606B174DFC8200D3E35B /* LmsClientLessonOverviewWebViewController.h */,
+				7482606C174DFC8200D3E35B /* LmsClientLessonOverviewWebViewController.m */,
+				7482606E174E003C00D3E35B /* LmsClientLessonOverviewDescriptionViewController.h */,
+				7482606F174E003C00D3E35B /* LmsClientLessonOverviewDescriptionViewController.m */,
 			);
 			name = "Lesson overviw";
 			sourceTree = "<group>";
@@ -379,6 +392,7 @@
 				018BD0A2174B47A60050CF8F /* Default-Landscape@2x~ipad.png in Resources */,
 				018BD0A4174B70DE0050CF8F /* CourseViewModel.h in Resources */,
 				018BD0AD174B9AD20050CF8F /* logo.jpg in Resources */,
+				74F4C5C3174E46C8009B7D88 /* LessonViewModel.h in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -401,6 +415,8 @@
 				018BD0B7174BBDBC0050CF8F /* LmsClientChapterOverviewViewController.m in Sources */,
 				74826067174D046000D3E35B /* LmsClientTableViewCell.m in Sources */,
 				7482606A174D04E900D3E35B /* LmsClientLessonViewController.m in Sources */,
+				7482606D174DFC8200D3E35B /* LmsClientLessonOverviewWebViewController.m in Sources */,
+				74826070174E003C00D3E35B /* LmsClientLessonOverviewDescriptionViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

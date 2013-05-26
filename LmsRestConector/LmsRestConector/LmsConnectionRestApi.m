@@ -170,15 +170,15 @@ static Connector* connection;
 
 }
 
-+ (void) lmsGetCourseLessonFrom:(NSString*)domain courseId:(NSNumber*)courseid lessonCid:(NSNumber*)lessonCid  callBackTarget:(id<CalableLmsClient>)target{
++ (void) lmsGetCourseLessonFrom:(NSString*)domain courseId:(NSString*)courseid lessonCid:(NSString*)lessonCid  callBackTarget:(id<CalableLmsClient>)target{
     
     NSMutableString *url = [[NSMutableString alloc]init];
     
     [url appendString:domain];
     [url appendString:@"/lms/rest/userlibrary/courses/"];
-    [url appendString:[courseid stringValue]];
+    [url appendString:courseid];
     [url appendString:@"/lessons/"];
-    [url appendString:[lessonCid stringValue]];
+    [url appendString:lessonCid];
     
     [connection sendGetTo:url withVariable:nil callBack:target];
 }
