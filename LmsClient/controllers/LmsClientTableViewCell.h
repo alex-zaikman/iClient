@@ -10,10 +10,10 @@
 
 @interface LmsClientTableViewCell : UITableViewCell
 
-@property (weak, nonatomic) IBOutlet UIImageView *img;
+//@property (weak, nonatomic) IBOutlet UIImageView *img;
 
 
-@property (weak, nonatomic) IBOutlet UILabel *title;
+//@property (weak, nonatomic) IBOutlet UILabel *title;
 
 
 @end

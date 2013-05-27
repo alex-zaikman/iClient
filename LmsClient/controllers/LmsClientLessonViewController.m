@@ -7,6 +7,8 @@
 //
 
 #import "LmsClientLessonViewController.h"
+#import "LmsClientTableViewCell.h"
+
 
 @interface LmsClientLessonViewController ()
 
@@ -17,18 +19,25 @@
 
 @synthesize data=_data;
 
-@synthesize dataToPass=_dataToPass;
+//@synthesize dataToPass=_dataToPass;
 
 
-
-- (id)initWithStyle:(UITableViewStyle)style
-{
-    self = [super initWithStyle:style];
-    if (self) {
-        // Custom initialization
++ (UIImage *)imageWithImage:(UIImage *)image scaledToSize:(CGSize)newSize {
+    if ([[UIScreen mainScreen] respondsToSelector:@selector(scale)]) {
+        if ([[UIScreen mainScreen] scale] == 2.0) {
+            UIGraphicsBeginImageContextWithOptions(newSize, YES, 2.0);
+        } else {
+            UIGraphicsBeginImageContext(newSize);
+        }
+    } else {
+        UIGraphicsBeginImageContext(newSize);
     }
-    return self;
+    [image drawInRect:CGRectMake(0, 0, newSize.width, newSize.height)];
+    UIImage *newImage = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return newImage;
 }
+
 
 - (void)viewDidLoad
 {
@@ -41,26 +50,17 @@
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
 }
 
-- (void)didReceiveMemoryWarning
-{
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
 
 #pragma mark - Table view data source
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-#warning Potentially incomplete method implementation.
-    // Return the number of sections.
-    return 0;
+    return 1;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
-#warning Incomplete method implementation.
-    // Return the number of rows in the section.
-    return 0;
+    return [[self.data valueForKey:@"sequences"]count];
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -68,7 +68,22 @@
     static NSString *CellIdentifier = @"Cell";
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
     
-    // Configure the cell...
+    cell.textLabel.text= [(NSDictionary*)[(NSArray*)[self.data valueForKey:@"sequences"] objectAtIndex:[indexPath indexAtPosition:[indexPath length]-1 ]] valueForKey:@"title" ];
+    
+    cell.textLabel.contentMode = UIViewContentModeScaleAspectFit;
+    
+    
+    NSString *url = [(NSDictionary*)[(NSArray*)[self.data valueForKey:@"sequences"] objectAtIndex:[indexPath indexAtPosition:[indexPath length]-1 ]] valueForKey:@"thumbnailUrl" ];
+    
+   
+    NSURL *bgImageURL = [NSURL URLWithString:url];
+    NSData *bgImageData = [NSData dataWithContentsOfURL:bgImageURL];
+    
+    cell.imageView.image =     [ LmsClientLessonViewController  imageWithImage:[UIImage imageWithData:bgImageData] scaledToSize:CGSizeMake(300,200)] ;
+    
+
+    
+   // [cell.img setNeedsDisplay];
     
     return cell;
 }

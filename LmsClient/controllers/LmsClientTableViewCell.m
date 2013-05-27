@@ -10,8 +10,8 @@
 
 @implementation LmsClientTableViewCell
 
-@synthesize img=_img;
-@synthesize title=_title;
+//@synthesize img=_img;
+//@synthesize title=_title;
 
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
@@ -19,8 +19,8 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self) {
       
-         [self addSubview:self.img];
-         [self addSubview:self.title];
+       //  [self.contentView addSubview:self.img];
+      //   [self.contentView addSubview:self.title];
         
     }
     return self;

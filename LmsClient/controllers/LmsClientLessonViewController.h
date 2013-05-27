@@ -12,6 +12,6 @@
 
 @property (nonatomic,strong) NSDictionary *data;
 
-@property (nonatomic,strong) NSDictionary *dataToPass;
+//@property (nonatomic,strong) NSDictionary *dataToPass;
 
 @end

@@ -144,7 +144,12 @@ void (^fnfaliure)(NSError *);
     NSDictionary* dic = [NSJSONSerialization JSONObjectWithData:data
                                                         options:NSJSONReadingMutableContainers error:&error];
     
-    NSDictionary *tocDic = [[(NSDictionary*)dic valueForKey:@"data"] valueForKey:@"toc" ];
+     NSDictionary * dataDic = [dic valueForKey:@"data"];
+    
+    
+   [self.data setValue:[dataDic valueForKey:@"cid" ] forKeyPath:@"dataId"];
+    
+    NSDictionary *tocDic = [dataDic valueForKey:@"toc" ];
     
     NSArray *chapters = [tocDic valueForKey:@"tocItems"];
     
@@ -171,8 +176,10 @@ void (^fnfaliure)(NSError *);
     NSDictionary* dic = [NSJSONSerialization JSONObjectWithData:data
                                                         options:NSJSONReadingMutableContainers
                                                           error:&error];
+    NSDictionary * dataDic = [dic valueForKey:@"data"];
     
-    NSArray *resources = [[dic valueForKey:@"data"] valueForKey:@"resources" ];
+    
+    NSArray *resources = [dataDic valueForKey:@"resources" ];
     
     NSArray *learningObjects = [[dic valueForKey:@"data"] valueForKey:@"learningObjects" ];
     
@@ -199,14 +206,14 @@ void (^fnfaliure)(NSError *);
         
         [subUrl appendString:self.domain];
         
-        [subUrl appendString:@"/persistent/data/shared/cms/courses/"];
+        [subUrl appendString:@"/cms/courses/"];
         
-        [subUrl appendString:self.courseid];
+        [subUrl appendString:[self.data valueForKey:@"dataId" ]];
 
         for(NSDictionary* res in resources){
-            if([[res valueForKey:@"href"]isEqualToString:thumbnailRef]){
+            if([(NSString*)[res valueForKey:@"resId"]isEqualToString:thumbnailRef]){
                 [subUrl appendString:@"/"];
-                [subUrl appendString:[res valueForKey:@"resId"]];
+                [subUrl appendString:[res valueForKey:@"href"]];
                 break;
             }
         }
