@@ -12,4 +12,9 @@
 
 @property (weak, nonatomic) IBOutlet UIWebView *webView;
 
+@property (nonatomic,strong) NSString *url;
+@property (nonatomic,strong) NSDictionary *vars;
+@property (nonatomic,strong) NSString *bodyData;
+@property (nonatomic,strong) NSString *method;
+
 @end
